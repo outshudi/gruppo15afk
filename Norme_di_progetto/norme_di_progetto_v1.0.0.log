@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.16)  23 MAR 2020 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.16)  23 MAR 2020 09:43
 entering extended mode
-**./glossario.tex
-(glossario.tex
+**./norme_di_progetto_v1.0.0.tex
+(norme_di_progetto_v1.0.0.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Users\Davide\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1409,8 +1409,8 @@ LaTeX Warning: Command \@footnotemark  has changed.
 LaTeX Warning: Unused global option(s):
     [openany].
 
-(glossario.aux)
-\openout1 = `glossario.aux'.
+(norme_di_progetto_v1.0.0.aux)
+\openout1 = `norme_di_progetto_v1.0.0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -1523,14 +1523,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 8.
 LaTeX Info: Redefining \pageref on input line 8.
 LaTeX Info: Redefining \nameref on input line 8.
- (glossario.out) (glossario.out)
+ (norme_di_progetto_v1.0.0.out) (norme_di_progetto_v1.0.0.out)
 \@outlinefile=\write4
-\openout4 = `glossario.out'.
+\openout4 = `norme_di_progetto_v1.0.0.out'.
 
-<../Glossario/img/logoAFK.png, id=106, 200.75pt x 200.75pt>
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 9.
+<../Norme_di_progetto/img/logoAFK.png, id=10, 200.75pt x 200.75pt>
+File: ../Norme_di_progetto/img/logoAFK.png Graphic file (type png)
+<use ../Norme_di_progetto/img/logoAFK.png>
+Package pdftex.def Info: ../Norme_di_progetto/img/logoAFK.png  used on input li
+ne 9.
 (pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 9.
 
@@ -1569,14 +1570,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Davide/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../Glossar
-io/img/logoAFK.png>] (glossario.toc)
-\tf@toc=\write5
-\openout5 = `glossario.toc'.
-
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 13.
+{C:/Users/Davide/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../Norme_d
+i_progetto/img/logoAFK.png>] (sezioni/registroModifiche.tex)
+File: ../Norme_di_progetto/img/logoAFK.png Graphic file (type png)
+<use ../Norme_di_progetto/img/logoAFK.png>
+Package pdftex.def Info: ../Norme_di_progetto/img/logoAFK.png  used on input li
+ne 13.
 (pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
 
 
@@ -1584,28 +1583,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  Make it at least 34.46123pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 13.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.13 \newpage
-              [1]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
+              [1] (norme_di_progetto_v1.0.0.toc)
+\tf@toc=\write5
+\openout5 = `norme_di_progetto_v1.0.0.toc'.
 
-("C:\Users\Davide\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 36.
-
-("C:\Users\Davide\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 36.
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 43.
+File: ../Norme_di_progetto/img/logoAFK.png Graphic file (type png)
+<use ../Norme_di_progetto/img/logoAFK.png>
+Package pdftex.def Info: ../Norme_di_progetto/img/logoAFK.png  used on input li
+ne 16.
 (pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
 
 
@@ -1613,326 +1607,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  Make it at least 34.46123pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
+
+
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 16.
 
 [2]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 56.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
 
+Package lastpage Warning: Rerun to get the references right on input line 32.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[3]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 91.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 101.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 112.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[6]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 120.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 129.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 134.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 139.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 149.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 152.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 163.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 171.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[14]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 180.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 186.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[16]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 194.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 197.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 216.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 239.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 244.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 247.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 251.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 254.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24]
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 257.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25] 
 AED: lastpage setting LastPage
-File: ../Glossario/img/logoAFK.png Graphic file (type png)
-<use ../Glossario/img/logoAFK.png>
-Package pdftex.def Info: ../Glossario/img/logoAFK.png  used on input line 262.
-(pdftex.def)             Requested size: 30.11119pt x 30.11119pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
+(norme_di_progetto_v1.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package rerunfilecheck Info: File `norme_di_progetto_v1.0.0.out' has not change
+d.
+(rerunfilecheck)             Checksum: 4FB2EFEDF69CE9A4F1A495B500FBF860;60.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.46123pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
- (glossario.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 262.
-Package rerunfilecheck Info: File `glossario.out' has not changed.
-(rerunfilecheck)             Checksum: 6411B3A5C44AA34E6D9F79BE2E5CDFE4;957.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 25105 strings out of 493305
- 466740 string characters out of 3129367
- 586079 words of memory out of 3000000
- 28102 multiletter control sequences out of 15000+200000
- 45562 words of font info for 42 fonts, out of 3000000 for 9000
+ 24974 strings out of 493305
+ 465588 string characters out of 3129367
+ 584877 words of memory out of 3000000
+ 28022 multiletter control sequences out of 15000+200000
+ 45244 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,74p,799b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hit.enc}{C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-mathsy.enc}{C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ec.enc}<C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmbx12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmmi12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/lm/lmri12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Davide/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on glossario.pdf (27 pages, 164724 bytes).
+ 62i,17n,74p,814b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
+nc}<C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmb
+x12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmr12.pfb><C:/Users/Davide/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmri12.pfb>
+Output written on norme_di_progetto_v1.0.0.pdf (3 pages, 79847 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 42 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
