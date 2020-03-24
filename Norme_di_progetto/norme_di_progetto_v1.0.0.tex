@@ -1,15 +1,16 @@
 \documentclass[a4paper, oneside, openany, dvipsnames, table, 12pt]{article}
-\usepackage{../template/AFKstyle}
-\usepackage{mathtools}
+\usepackage{../Template/AFKstyle}
 \usepackage{hyperref}
 \input{sezioni/copertina.tex}
-\renewcommand\thesection{}
+\makeindex
 
 \begin{document}
 \copertina{}
 
 \newpage
 \input{sezioni/registroModifiche.tex}
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
 \newpage
 
 \tableofcontents
@@ -18,15 +19,15 @@
 \newpage
 
 %\input{sezioni/introduzione.tex}
-\pagebreak
+%\pagebreak
 
 %\input{sezioni/processi_primari.tex}
-\pagebreak
+%\pagebreak
 	
-%\input{sezioni/processi_di_supporto.tex}
+\input{sezioni/processi_di_supporto.tex}
 \pagebreak
 	
 %\input{sezioni/processi_organizzativi.tex}
-\pagebreak
+%\pagebreak
 
 \end{document}
