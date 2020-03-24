@@ -86,6 +86,24 @@
 \usepackage[utf8]{inputenc}
 %\usepackage{cm-super}
 
+% Numerazione figure 
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr}
+
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
+
+\usepackage[bottom]{footmisc}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+
+%------------------
+
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage[italian]{babel} %il documento è in italiano
@@ -152,14 +170,14 @@
 
 \usepackage{breakurl}%\url{...} può continare alla linea successiva. (si può andare a capo)
 
-
+\usepackage{color}
 \usepackage[colorlinks=true]{hyperref}
 \hypersetup{
     colorlinks=true,
     citecolor=black,
     filecolor=black,
     linkcolor=blue, % colore dei link interni
-    urlcolor=Maroon  % colore dei link interniesterni
+    urlcolor=blue  % colore dei link interniesterni
 }
 
 %per alcune liste, permette di usare 'alligator' nei labeling 
@@ -216,35 +234,19 @@
 \newcommand{\RQ}{Revisione di Qualifica}
 \newcommand{\RA}{Revisione di Accettazione}
 
-%Per avere le liste di secondo livello con i bullet a cerchio
-\renewcommand{\labelitemii}{$\circ$}
+%Per avere le liste di secondo livello con le linee -
+\renewcommand{\labelitemii}{$-$}
 
-\lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, let},
+%per inserire codice latex
+\lstdefinelanguage{LaTeX}{
+  keywords={begin, end, item, includegraphics, caption, linewidth},
   keywordstyle=\color{blue}\bfseries,
-  ndkeywords={class, export, boolean, throw, implements, import, this},
-  ndkeywordstyle=\color{darkgray}\bfseries,
-  identifierstyle=\color{black},
-  sensitive=false,
-  comment=[l]{//},
-  morecomment=[s]{/*}{*/},
   commentstyle=\color{purple}\ttfamily,
-  stringstyle=\color{red}\ttfamily,
-  morestring=[b]',
-  morestring=[b]"
 }
 
 \lstset{
-   language=JavaScript,
-   extendedchars=true,
-   basicstyle=\footnotesize\ttfamily,
-   showstringspaces=false,
-   showspaces=false,
-   numbers=left,
-   numberstyle=\footnotesize,
-   numbersep=9pt,
-   tabsize=2,
-   breaklines=true,
-   showtabs=false,
-   captionpos=b
+ language=LaTeX,
+  basicstyle=\footnotesize\ttfamily,
+   numbers=none,
+  frame=single
 }

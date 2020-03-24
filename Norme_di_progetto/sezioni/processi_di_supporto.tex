@@ -112,7 +112,7 @@ Alcuni esempi \textbf{non corretti} sono: \begin{itemize}
 \subsubsection{Stile del testo}
 \begin{itemize}
 \item \textbf{Grassetto}: viene applicato se necessario alle voci di un elenco puntato, a titoli o a termini di frasi che si vuol far risaltare;
-\item \textbf{Corsivo}: vengono scritti in corsivo il nome del progetto \textit{Predire con Grafana}, il nome del gruppo \textit{TeamAFK} ed il nome dell'azienda proponente \textit{Zucchetti SpA};
+\item \textbf{Corsivo}: vengono scritti in corsivo il nome del progetto \textit{Predire con Grafana}, i ruoli, i documenti citati, il nome del gruppo \textit{TeamAFK} ed il nome dell'azienda proponente \textit{Zucchetti SpA};
 \item \textbf{Maiuscolo}: vengono scritti con sole lettere maiuscolo gli acronimi; nel caso di nomi o titoli composti da più parole verrà indicato con la lettera maiuscola solamente la prima lettera della parola.
 \item \textbf{Nomi dei documenti}: 
 \begin{itemize}
@@ -125,7 +125,6 @@ Alcuni esempi \textbf{non corretti} sono: \begin{itemize}
 \subsubsection{Elenchi puntati}
 Ogni voce di un elenco o sottoelenco comincia per lettera minuscola, e termina per ";", eccetto l'ultima che termina per ".". 
 Se le voci contengono una descrizione, andranno sritte in grassetto.
-\pagebreak
 
 \subsubsection{Formati comuni}
 In conformità allo standard ISO 8601\footnote{ISO 8601: standard internazionale per la rappresentazione di date e orari.}:\begin{itemize}
@@ -207,7 +206,7 @@ L'obiettivo della configurazione è di creare ordine tra i documenti e il softwa
 
 \subsubsection{Versionamento}
 \paragraph{Versionamento dei documenti} \mbox{} \\ \mbox{} \\
-Ogni versione di qualsiasi documento deve corrispondere ad una riga della tabelle delle modifiche. il numero di versione è composto da tre cifre: \\ \\
+Ogni versione di qualsiasi documento deve corrispondere ad una riga della tabella delle modifiche. il numero di versione è composto da tre cifre: \\ \\
 \centerline{X.Y.Z} \\
 \begin{itemize}
 \item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo l'approvazione del \textit{Responsabile} di progetto: \begin{itemize}
@@ -233,16 +232,41 @@ I membri del team possono interagire con il VCS\glo sia da linea di comando, sia
 
 \paragraph{Struttura del repository} \mbox{} \\ \mbox{} \\
 All'interno della repository principale sopra descritta, ci sono due differenti repository: \begin{itemize}
-\item \textbf{PredireConGrafana-docs}: \url{https://github.com/teamafkSWE/PredireConGrafana-docs}, contiene tutti i documenti ufficiali del progetto, suddivisi in specifiche cartelle: \begin{itemize}
-\item \textbf{Cartella principale - RR}; raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la Revisione dei Requisiti. In futuro, saranno aggiunte cartelle distinti nominate \textbf{RP, RQ} e \textbf{RA}, contenenti i file delle rispettive consegne;
+\item \textbf{PredireConGrafana-docs}: contiene tutti i documenti ufficiali del progetto, suddivisi in specifiche cartelle: \\
+\centerline{\url{https://github.com/teamafkSWE/PredireConGrafana-docs}}  \begin{itemize}
+\item \textbf{Cartella principale - RR}: raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la Revisione dei Requisiti. In futuro, saranno aggiunte cartelle distinte nominate \textbf{RP, RQ} e \textbf{RA}, contenenti i file delle rispettive consegne;
+\begin{itemize}
+\item[$\bullet$] \textbf{Tipologia\_di\_Documento}: ogni documento avrà la rispettiva cartella (e.i. Norme\_di\_Progetto), contenente tutti i file (sezioni ed immagini) necessari per la sua compilazione;
+\item[$\bullet$] \textbf{copertina.tex}: file che permetterà una facile e rapida modifica dell'impostazione testuale del frontespizio;
+\end{itemize}
 \item \textbf{Template}: contiene tutti i file che definiscono il template \LaTeX{} per la creazione di nuovi documenti;
-\item \textbf{Tipologia\_di\_Documento}: ogni documento avrà la rispettiva cartella (e.i. Norme\_di\_Progetto), contenente tutti i file (sezioni ed immagini) necessari per la sua compilazione;
 \end{itemize} 
-\item \textbf{PredireConGrafana-SW}: \url{https://github.com/teamafkSWE/PredireConGrafana-SW}, conterrà tutti i file di codifica dei plug-in da sviluppare. 
+\item \textbf{PredireConGrafana-SW}: conterrà tutti i file di codifica dei plug-in da sviluppare. \\ \centerline{\url{https://github.com/teamafkSWE/PredireConGrafana-SW}}
 \end{itemize}
 Entrambe le repository, avranno una propria struttura identica a livello: \begin{itemize}
 \item \textbf{locale}: ogni membro del gruppo lavora sui file clonati dal repositoru remoto nel proprio PC;
 \item \textbf{remoto}: presente su GitHub, contiene il lavoro svolto da ogni componente e che viene condiviso con il team.
 \end{itemize}
 
+\paragraph{Tipi di file} \mbox{} \\ \mbox{} \\
+I file utilizzati per la documentazione del progetto sono: \begin{itemize}
+\item file con estensione .tex di \LaTeX{};
+\item file con estensione .pdf (da consegnare);
+\item file di stile, .sty,  e immagini di supporto.
+\end{itemize}
+Il file ".gitignore" è presente al livello più esterno della repository ed elenca tutti i file esclusi dal versionamento.
+
+\paragraph{Utilizzo di Git} \mbox{} \\ \mbox{} \\
+Il repository di Git è composto da vari branch\glo, per favorire la collaborazione tra i vari membri e il parallelismo delle attività. Si consiglia quindi di seguire questa procedura:
+\begin{enumerate}
+\item scegliere il proprio branch di lavoro;
+\item eseguire il pull\glo dal repository remoto, che effettua quindi l'aggiornamento del proprio repository locale;
+\item svolgere il compito assegnato;
+\item eseguire il comando di aggiunta (add) dei file nuovi o modificati da condividere all'area di staging\glo;
+\item eseguire il comando di commit\glo dei file aggiunti, corredato da un messaggio che identifica il lavoro svolto;
+\item eseguire il push\glo del commit sul repository remoto.
+\end{enumerate}
+
+\paragraph{Gestione delle modifiche}\mbox{} \\ \mbox{} \\
+Tutti i membri del team possono modificare i file in ogni branch, ad eccezione del branch master, per il quale occorre richiedere una pull e ottenere l'approvazione di un altro membro.
 
