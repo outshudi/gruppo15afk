@@ -1,4 +1,11 @@
 \section{Descrizione generale}
+   \subsection{Caratteristiche del prodotto}
+   Lo scopo del capitolato è la realizzazione di un plug-in(g) per Grafana(g) con la capacità di utilizzare una support vector machine(g) calibrata dall’utente e definita in formato JSON(g) in grado di lanciare allarmi e proporre miglioramenti in tempo reale(g).
+Nello specifico il plug-in deve poter monitorare i dati in ingresso da un certo flusso, come per esempio percentuali di utilizzo della memoria o temperatura del processore, i quali verranno successivamente mostrati attraverso l’interfaccia grafica(g) di Grafana.
+La necessità di lanciare un allarme o proporre un cambiamento verrà valutata dalla SVM in base ai predittori su cui è stata tarata dopo la fase di addestramento.
+Il plug-in(g) rimane in esecuzione su grafana e riceve continuamente informazioni in ingresso da un flusso di dati: viene quindi continuamente ricalcolata la necessità di lanciare un alert o proporre un miglioramento.
+La SVM sopra menzionata potrà essere sviluppata attraverso la libreria SVMJS(g) (\url{ https://github.com/karpathy/svmjs}).
+
 	\subsection{Obiettivi del prodotto}
 	L’obiettivo dell’elaborato consiste nella realizzazione di due plug-in che migliorino l’’efficienza di monitoraggio di un flusso di dati espandendo l’utilizzo di Grafana e consentendo ai clienti  interessati, ad avere un’analisi dei dati più precisa rispetto ad un utilizzo out-of-the-box(g) della piattaforma. Specificatamente il  fine del progetto consiste nella fornitura, attraverso una SVM o RL, di dati all’utente. Il beneficio derivato da una corretta applicazione dei plug-in è stato discusso in riunione esterna con la proponente: tenendo monitorato il flusso di dati con il prodotto è possibile ottenere previsioni probabilistiche. 
 	\subsection{Caratteristiche degli Utenti}
