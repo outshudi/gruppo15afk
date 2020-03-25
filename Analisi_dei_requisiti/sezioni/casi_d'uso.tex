@@ -1,5 +1,38 @@
 \section{Casi d'uso}
+
+	\subsection{Introduzione}
+Il numero limitato dei casi identificati è dovuto alla natura del prodotto, in quanto si tratta di un plug-in e quindi di un’estensione di una piattaforma già esistente.
+Per la piattaforma in questione non è fornita alcuna documentazione in quanto essa è già disponibile al sito web del distributore della piattaforma: Grafana Labs (inserire link; vedi altri proggeti).
+
 	\subsection{Struttura dei casi d'uso}
-		
-	\subsection{Classificazione dei casi d'uso}
-	\subsection{Attori dei casi d'uso}
+Viene riportata di seguito la classificazione dei casi d’uso. Verranno descritti nel documento rispettando la struttura esposta in 3.2.1..
+	
+		\subsubsection{Struttura dei casi d'uso}
+		\begin{itemize}
+			\item Titolo;
+ 			\item Descrizione; 
+ 			\item Attori; 
+			\item Precondizioni; 
+ 			\item Postcondizioni; 
+ 			\item Scenario principale; 
+ 			\item Estensioni.
+ 		\end{itemize}
+Verrà utilizzato il linguaggio di modellazione UML 2.0 (fornito dal prof. Cardin a link xy).
+Ogni requisito può essere inserito in vari UC, che si differenziano ciascuno per una diversa profondità dei dettagli da cui possono distinguersi ulteriori requisiti. 
+
+		\subsubsection{Classificazione dei casi d'uso}
+Identificare i casi d’uso in modo univoco aiuta la tracciabilità.  I casi d’uso sono classificati nel seguente modo:  UC[ID].
+\emph{ID} è il codice univoco che rappresenta il requisito del caso d’uso. Se lo UC è collegato per profondità di dettaglio ad un altro UC, l’ID verrà rappresentato in maniera gerarchica(esempio: Se un UC rappresenta un livello di dettaglio maggiore con ID x, il suo ID sarà x.y, dove y indica l’annidamento raggiunto).
+	
+	\subsection{Attori}
+Il sistema di autenticazione e registrazione dell’utente viene gestito per intero dal sistema Grafana, in quanto il prodotto finale non disporrà di una funzionalità di autenticazione/registrazione interna.
+Il numero limitato di differenti  attori che approcciano al prodotto in analisi è dovuto principalmente  al fatto che , essendo il prodotto “Predire con Grafana” un insieme di due plug-in del sistema indipendente di “Grafana”, un esiguo numero di utenti hanno effettivamente la possibilità di approcciare al prodotto finale.
+\textbf{Attori primari}
+	\begin{itemize}
+		\item\textbf{Utente}: è un generico utente con autenticazione già effettuata nel sistema Grafana. E’ l’unico tipo di utente in grado di interagire con i prodotti, in quanto questi si tratta di plug-in.
+
+ 	\end{itemize}
+\textbf{Attori secondari}
+	\begin{itemize}
+		\item\textbf{Piattaforma Grafana}: è un sistema di monitoraggio di stream\glo di dati, che ospiterà il plug-in prodotto. Consente agli utenti registrati di lanciare alert e realizzare grafici modellati sui dati forniti in ingresso al plug-in.
+ 	\end{itemize}
