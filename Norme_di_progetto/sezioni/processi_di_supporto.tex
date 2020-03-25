@@ -1,6 +1,6 @@
 \section{Processi di Supporto}
 \subsection{Documentazione}
-Ogni processo\glo e attività significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante l'intero ciclo di vita del software. I documenti sono consultabili nelle relative sezioni della repository\glo: \url{https://github.com/teamafkSWE/docs}. 		
+Ogni processo\glo e attività\glo significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante l'intero ciclo di vita del software. I documenti sono consultabili nelle relative sezioni della repository\glo: \url{https://github.com/teamafkSWE/docs}. 		
 
 \subsection{Descrizione}
 Questo capitolo contiene le decisioni e le norme che sono state scelte per la scrittura, verifica e approvazione della documentazione ufficiale. L'insieme di tali norme garantisce consistenza ed omogeneità nella stesura di testi.
@@ -29,10 +29,10 @@ Il frontespizio è la prima pagina del documento ed è così strutturato:\begin{
 \item \textbf{Logo del gruppo}: logo del \textit{TeamAFK} visibile come primo elemento centrato in alto;
 \item \textbf{Titolo}: nome del documento, posizionato centralmente sotto il logo;
 \item \textbf{Gruppo e progetto}: nome del gruppo e del progetto \textit{Predire con Grafana}, visibile centralmente sotto il titolo;
-\item \textbf{Recapito}; indirizzo di posta elettronica del gruppo, posizione sotto il nome del gruppo e del progetto;
+\item \textbf{Recapito}; indirizzo di posta elettronica del gruppo, posizionato sotto il nome del gruppo e del progetto;
 \item \textbf{Informazioni sul documento}: tabella posizionata al di sotto del recapito, contenente le seguenti informazioni: \begin{itemize}
 \item \textbf{Versione}: versione del documento;
-\item \textbf{Approvatore}: nome e cognome dei membri del gruppo incaricatoi dell'approvazione del documento;
+\item \textbf{Approvatore}: nome e cognome dei membri del gruppo incaricati dell'approvazione del documento;
 \item \textbf{Redattori}: nome e cognome dei membri del gruppo incaricati della redazione del documento;
 \item \textbf{Verificatori}: nome e cognome dei membri del gruppo incaricati della verifica del documento;
 \item \textbf{Uso}: tipolo d'uso del documento, che può essere "interno" o "esterno";
@@ -76,9 +76,16 @@ La struttura è così definita: \begin{itemize}
 \end{itemize}
 Ogni verbale dovrà essere denominato secondo il seguente formato: \\ \\
 \centerline{\textbf{VX\_YYYY-MM-DD}} \\ \\
-dove con "X" bisognerà indicare la tipologia d'uso: \begin{itemize}
-\item \textbf{I}: verbale "interno";
-\item \textbf{E}: verbale "esterno".
+dove con "X" bisognerà indicarne la tipologia: \begin{itemize}
+\item \textbf{I}: verbale "interno", incontro tra i membri del team di progetto;
+\item \textbf{E}: verbale "esterno", incontro con partecipanti esterni al gruppo (committente o proponente), per chiarimenti riguardanti il progetto.
+\end{itemize}
+
+\subsubsection{Uso dei documenti}
+I documenti possono essere adibiti ad uso interno o esterno:
+\begin{itemize}
+\item \textbf{Interno}: documenti utilizzati all'interno del gruppo, tipicamente \textit{Verbali} e \textit{Norme di Progetto};
+\item \textbf{Esterno}: documenti destinati a persone esterne, ovvero committenti e proponente.
 \end{itemize}
 
 \subsubsection{Note a piè di pagina}
@@ -113,7 +120,7 @@ Alcuni esempi \textbf{non corretti} sono: \begin{itemize}
 \begin{itemize}
 \item \textbf{Grassetto}: viene applicato se necessario alle voci di un elenco puntato, a titoli o a termini di frasi che si vuol far risaltare;
 \item \textbf{Corsivo}: vengono scritti in corsivo il nome del progetto \textit{Predire con Grafana}, i ruoli, i documenti citati, il nome del gruppo \textit{TeamAFK} ed il nome dell'azienda proponente \textit{Zucchetti SpA};
-\item \textbf{Maiuscolo}: vengono scritti con sole lettere maiuscolo gli acronimi; nel caso di nomi o titoli composti da più parole verrà indicato con la lettera maiuscola solamente la prima lettera della parola.
+\item \textbf{Maiuscolo}: solo gli acronimi vengono scritti interamente in maiuscolo; nel caso di nomi o titoli composti da più parole verrà indicato con la lettera maiuscola solamente la prima lettera della parola.
 \item \textbf{Nomi dei documenti}: 
 \begin{itemize}
 \item utilizzare il corsivo per citare un documento;
@@ -141,13 +148,13 @@ In conformità allo standard ISO 8601\footnote{ISO 8601: standard internazionale
 Il progetto prevede la redazione di un insieme di documenti, suddivisi in documenti interni ed esterni. Sono di seguito elencati con le rispettive sigle e descrizioni. \\
 I documenti interni sono: \begin{itemize}
 \item \textbf{Studio di fattibilità - SdF}: descrive in modo sintetico i capitolati e spiega le motivazioni della loro scelta o esclusione;
-\item \textbf{Norme di Progetto - NdP}: sono un riferimento normativo per lo svolgimento del progetto;
-\item \textbf{Glossario - G}: raccoglie i termini di interesse sui quali è necessaria una descrizione più approfondita che ne chiarisca il significato.
+\item \textbf{Norme di Progetto - NdP}: sono un riferimento normativo per lo svolgimento del progetto.
 \end{itemize}
 I documenti esterni sono: \begin{itemize}
 \item \textbf{Analisi dei Requisiti - AdR}: stabilisce le caratteristiche che il software deve rispettare; 
 \item \textbf{Piano di Progetto - PdP}: descrive la strategia di gestione del progetto, evidenziandone la fattibilità e le criticità;
 \item \textbf{Piano di Qualifica - PdQ}: descrive la qualità del software e dei processi, e come la si intende raggiungere;
+\item \textbf{Glossario - G}: raccoglie i termini di interesse sui quali è necessaria una descrizione più approfondita che ne chiarisca il significato;
 \item \textbf{Manuale Utente - MU}: a disposizione degli utenti;
 \item \textbf{Manuale Sviluppatore - MS}: a disposizione di sviluppatori e manutentori.
 \end{itemize}
@@ -244,7 +251,7 @@ All'interno della repository principale sopra descritta, ci sono due differenti 
 \item \textbf{PredireConGrafana-SW}: conterrà tutti i file di codifica dei plug-in da sviluppare. \\ \centerline{\url{https://github.com/teamafkSWE/PredireConGrafana-SW}}
 \end{itemize}
 Entrambe le repository, avranno una propria struttura identica a livello: \begin{itemize}
-\item \textbf{locale}: ogni membro del gruppo lavora sui file clonati dal repositoru remoto nel proprio PC;
+\item \textbf{locale}: ogni membro del gruppo lavora sui file clonati dal repository remoto nel proprio PC;
 \item \textbf{remoto}: presente su GitHub, contiene il lavoro svolto da ogni componente e che viene condiviso con il team.
 \end{itemize}
 
@@ -270,3 +277,141 @@ Il repository di Git è composto da vari branch\glo, per favorire la collaborazi
 \paragraph{Gestione delle modifiche}\mbox{} \\ \mbox{} \\
 Tutti i membri del team possono modificare i file in ogni branch, ad eccezione del branch master, per il quale occorre richiedere una pull e ottenere l'approvazione di un altro membro.
 
+\subsection{Gestione della qualità}
+Lo scopo è di garantire che il prodotto e i servizi offerti rispettino gli obiettivi di qualità e che i bisogni del proponente siano soddisfatti. 
+
+\subsubsection{Descrizione}
+La gestione della qualità viene approfondita nel \textit{Piano di Qualifica}, dove sono descritte le modalità utilizzate per garantire la qualità nello sviluppo del progetto. In particolare: \begin{itemize}
+\item sono presentati gli standard utilizzati;
+\item sono individuati i processi\glo di interesse;
+\item sono individuati gli attributi del software piè importanti per il progetto.
+\end{itemize}
+Per ogni processo vengono descritti: \begin{itemize}
+\item gli obiettivi da perseguire;
+\item le strategie da applicare;
+\item le metriche da utilizzare.
+\end{itemize}
+L'obiettivo è quello di ottenere software e documentazione di qualità soddisfacente.
+
+\subsubsection{Strumenti}
+Gli strumenti utilizzati per la qualità sono:
+\begin{itemize}
+\item forniti dallo standard ISO-12207;
+\item le metriche.
+\end{itemize}
+
+\paragraph{Metriche} \mbox{} \\ \mbox{} \\
+Le metriche sono distinte in tre categorie: processi, documentazione e codifica. Per ciascuna di esse si indica il motivo per cui è stata scelta e la procedura di calcolo.
+
+\pagebreak
+\subparagraph{Metriche per i processi}
+	\rowcolors{2}{greyRowafk}{white}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{center}
+	\begin{tabular}{ c | L{12cm} }
+		\rowcolor{greyafk}
+		\textcolor{white}{\textbf{Nome}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
+		Schedule Variance (SV)  & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \'E calcolata utilizzando la seguente formula: \newline
+\[ SV = DCE-DCP\]
+dove: \begin{itemize}
+\item \textbf{DCE}: data conclusione effettiva;
+\item \textbf{DCP}: data conclusione pianificata.
+\end{itemize}
+Se $SV \leq 0$ significa che l’attività o il processo è in pari o in anticipo, invece, se $SV > 0$ significa che l’attività è in ritardo. \\	
+		Budget Variance (BV) & Permette di controllare i costi sostenuti alla data corrente rispetto al budget preventivato. Viene calcolata in fase di consuntivo di periodo utilizzando la seguente formula: \newline
+		\[ BV[\%] = \frac{CP-CE}{CE} \]		
+dove: \begin{itemize}
+\item \textbf{CP}: costo preventivato;
+\item \textbf{CE}: costo effettivo.
+\end{itemize}
+Se $BV \geq 0$ indica che il budget sta venendo speso più lentamente di quanto pianificato, se negativo invece indica che il budget sta venendo speso più velocemente di quanto pianificato.
+	\end{tabular}
+	\end{center}
+\pagebreak
+\subparagraph{Metriche per i documenti}
+\rowcolors{2}{greyRowafk}{white}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{center}
+	\begin{tabular}{ c | L{11cm} }
+		\rowcolor{greyafk}
+		\textcolor{white}{\textbf{Nome}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
+		Indice Gulpease (IG)  & \'E un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
+\[ IG = 89 + \frac{300 \cdot (\#frasi) - 10 \cdot (\#lettere)}{\#parole} \] \newline
+Il risultato è un valore compreso nell'intervallo tra 0 e 100, dove il valore 100 indica la più alta leggibilità. Un indice inferiore a 80 indica documenti di difficile leggibilità per chi ha la licenza elementare, inferiore a 60 per chi ha la licenza media, inferiore a 40 per chi ha un diploma superiore.
+	\\
+	\end{tabular}
+	\end{center}	
+
+\subparagraph{Metriche per la codifica} \mbox{} \\ \mbox{} \\
+Le metriche per la codifica verranno inserite quando il \textit{TeamAFK} entrerà nella fase successiva del progetto, ossia la Revisione di Progettazione (RP).
+
+\subsubsection{Verifica}
+Il processo di verifica ha come scopo la realizzazione di prodotti corretti, coesi e completi. Sono soggetti a verifica i documenti e il software.
+Il processo di verifica deve rispettare i seguenti punti: \begin{itemize}
+\item la verifica deve essere effettuata seguendo procedure ben definite;
+\item per verificare vi sono criteri chiari e affidabili;
+\item ogni fase del prodotto viene verificata;
+\item dopo la verifica il prodotto è in uno stato stabile;
+\item il prodotto può essere validato.
+\end{itemize}
+Il processo di verifica prende in input ciò che è già stato prodotto e lo restituisce in uno stato
+conforme alle aspettative (stabile). Per ottenere tale risultato ci si affida a processi di analisi e test.
+\paragraph{Analisi} \mbox{} \\ \mbox{} \\
+Il processo di analisi si suddivide in statica e dinamica.
+
+\paragraph*{Analisi statica} \mbox{} \\ \mbox{} \\
+L'analisi statica effettua controlli su documenti e codice. Questo tipo di analisi serve per rilevare varie tipologie di anomalie. \\
+Questa attività viene effettuata con l'ausilio di due metodi manuali di lettura (attuati da persone) differenti: \begin{itemize}
+\item \textbf{Walkthrough}: i vari componenti del team effettuano una lettura scrupolosa di documenti e/o codice alla ricerca di errori, senza sapere inizialmente se ce ne siano;
+\item \textbf{Inspection}: i verificatori usano liste di controllo (checklist) per fare ispezione cercando errori specifici in parti specifiche. Questa tecnica permette quindi di aumentare l'efficienza dello sviluppo, diminuendo i tempi dell'analisi statica.
+\end{itemize}
+A seguire sono descritte le liste di controllo utilizzabili per le ispezioni:
+\begin{table}[H]
+\caption{Errori frequenti nei documenti}
+\begin{center}
+\begin{tabular}{C{4cm} | C{12cm}}
+\rowcolor{greyafk}
+\textcolor{white}{\textbf{Oggetto}} & \centerline{\textcolor{white}{\textbf{Controllo}}} \\
+Formato data & Deve seguire il formato gregoriano YYYY-MM-DD \\
+Sintassi & La frase è troppo complessa e deve essere semplificata \\
+Punteggiatura degli elenchi & Ogni voce termina in ";" eccetto l'ultima che termina in "."\\
+Errori di battitura & Tipici errori di battitura dovuti alla vicinanza delle
+lettere sulla tastiera, ad esempio la lettera "a" al posto della "s", "i" al posto di "o", "m" al posto di "n" \\
+Gerarchia delle sezioni & Non viene scritta la gerarchia delle sezioni dei documenti in maniera adeguata, ovvero: section, subsection, subsubsection, paragraph, subparagraph
+\end{tabular}
+\end{center}
+\end{table}
+
+\paragraph*{Analisi dinamica} \mbox{} \\ \mbox{} \\
+L'analisi dinamica è una tecnica di analisi del prodotto software che richiede la sua esecuzione. Produce una misura della qualità del prodotto, mediante l'esecuzione di test specifici che verificano se il prodotto funziona e se ci sono anomalie.
+
+\paragraph{Test} \mbox{} \\ \mbox{} \\
+I test sono l'attività fondamentale dell'analisi dinamica: il loro scopo è verificare che il codice
+scritto funzioni correttamente. I test devono:
+\begin{itemize}
+\item essere ripetibili;
+\item specificare l'ambiente di esecuzione;
+\item identificare input e output richiesti;
+\item avvertire di possibili effetti indesiderati;
+\item fornire informazioni sui risultati dell'esecuzione.
+\end{itemize}
+Ci sono vari tipi di test, ognuno dei quali ha un diverso oggetto di verifica e scopo.
+
+\paragraph*{Test funzionali} \mbox{} \\ \mbox{} \\
+Test condotti per valutare la conformità di un componente o sistema con requisiti funzionali. Ne fanno parte: \begin{itemize}
+\item \textbf{Test di unità\glo}: si eseguono su unità di software, e si concentrano sul loro funzionamento individuale;
+\item \textbf{Test di integrazione}: verificano se sono rispettati i contratti di interfaccia tra più moduli o sub-system (interni o esterni);
+\item \textbf{Test di accettazione UAT}: gli UAT (User Acceptance Testing) si occupano di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento di questo test garantisce che il software sia pronto per essere rilasciato.
+\end{itemize}
+
+\paragraph*{Test di regressione} \mbox{} \\ \mbox{} \\
+Il test di regressione va eseguito ogni volta che viene modificata un’implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti.\\ Se necessario è anche possibile scrivere nuovi test.
+
+\paragraph*{Test di sistema} \mbox{} \\ \mbox{} \\
+Verificano il comportamento dell'intero sistema.\\
+Lo scopo principale di questi test è la verifica del sistema rispetto alle specifiche tecniche definite nell'\textit{Analisi dei Requisiti}.
+
+\subsubsection{Validazione}
+Questo processo avviene tramite test pianificati dal \textit{Progettista} ed in seguito eseguiti dal \textit{Verificatore}.
+Lo scopo di quest'ultimi è appunto accertare che il prodotto finale corrisponda alle attese, soddisfando tutti i requisiti concordati e i bisogni del committente. \\
+Tali test sono soggetti a tracciamento e verranno riportati all'interno del \textit{Piano di Qualifica}.

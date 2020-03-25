@@ -1,8 +1,14 @@
 \documentclass[a4paper, oneside, openany, dvipsnames, table, 12pt]{article}
 \usepackage{../Template/AFKstyle}
 \usepackage{hyperref}
+\usepackage{amsmath}
 \input{sezioni/copertina.tex}
 \makeindex
+\definecolor{greyafk}{RGB}{255, 71, 87}
+\definecolor{greyRowafk}{RGB}{234, 234, 234}
+\rowcolors{2}{greyRowafk}{white}
+\renewcommand{\arraystretch}{1.5}
+
 
 \begin{document}
 \copertina{}
@@ -17,6 +23,8 @@
 \newpage
 \listoffigures
 \newpage
+\listoftables
+\newpage
 
 %\input{sezioni/introduzione.tex}
 %\pagebreak
@@ -27,7 +35,7 @@
 \input{sezioni/processi_di_supporto.tex}
 \pagebreak
 	
-\input{sezioni/processi_organizzativi.tex}
-\pagebreak
+%\input{sezioni/processi_organizzativi.tex}
+%\pagebreak
 
 \end{document}
