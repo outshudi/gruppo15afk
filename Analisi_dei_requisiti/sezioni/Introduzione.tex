@@ -1,18 +1,18 @@
 \section{Introduzione}
 	\subsection{Scopo del documento}
-	L'analisi dei requisiti è un documento che rappresenta un vincolo tra il fornitore, che si impegna 		a sviluppare un software conforme ai vincoli patteggiati , e il cliente, che riconosce tali 			requisiti come quelli ricercati.
-\\	Il presente documento ha lo scopo di descrivere i requisiti e le funzionalità individuate 			    analizzando il capitolato C4 e agli incontri con il proponente, Zucchetti spa .
+		Il presente documento ha lo scopo di descrivere in modo dettagliato i requisiti stabiliti per il prodotto. Tali requisiti sono stati individuati a seguito dell'analisi del capitolato \emph{C3}, ed i successivi incontri con la proponente\glo \emph{Zucchetti S.p.A.}
 
-	\subsection{Scopo del prodotto}
-	Lo scopo del prodotto è lo sviluppo di due plug-in per la piattaforma Grafana. Le due estensioni     	produrranno delle previsioni di due tipi:
-\\	
-	\begin{itemize}
-		\item \textbf {classificazioni}, attraverso l'uso della tecnica Support Vector Machine(SVM), per stimare il gruppo di appartenenza degli eventi dai dati "predittori"
-		\item \textbf{regressioni} ,attraverso l'uso della tecnica Regressione Lineare, per stimare un valore numerico con campo continuo
-	\end{itemize}
+	
+\subsection{Scopo del prodotto}
+   Lo scopo del capitolato(toglierei capitolato) è la realizzazione di un plug-in\glo per \emph{Grafana}\glo con la capacità di utilizzare una Support Vector Machine\glo calibrata dall'utente e definita in formato JSON\glo in grado di lanciare allarmi e proporre miglioramenti in tempo reale\glo.
+Nello specifico il plug-in deve poter monitorare i dati in ingresso da un certo flusso, come per esempio percentuali di utilizzo della memoria o temperatura del processore, i quali verranno successivamente mostrati attraverso l'interfaccia grafica\glo di \emph{Grafana}.
+La necessità di lanciare un allarme o proporre un cambiamento verrà valutata dalla SVM in base ai predittori su cui è stata tarata dopo la fase di addestramento.
+Il plug-in\glo rimane in esecuzione su \emph{Grafana} e riceve continuamente informazioni in ingresso da un flusso di dati: viene quindi continuamente ricalcolata la necessità di lanciare un \emph{alert}\glo o proporre un miglioramento.
+La SVM sopra menzionata potrà essere sviluppata attraverso la libreria SVMJS\glo (\url{ https://github.com/karpathy/svmjs}).
 	
 	\subsection{Glossario}
-	
+		Affinché sia possibile evitare ambiguità relative al linguaggio utilizzato nei documenti formali, viene fornito il \emph{Glossario v.1.0.0}. In tale documento vengono definiti e descritti tutti i termini con un significato particolare. Per facilitare la lettura, i termini sono contraddistinti mediante una lettera \emph{"G"} a pedice.
+		
 	\subsection{Riferimenti}
 		\subsubsection{Normativi}
 			\begin{itemize}
