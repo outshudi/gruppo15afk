@@ -303,22 +303,35 @@ Gli strumenti utilizzati per la qualità sono:
 \paragraph{Metriche} \mbox{} \\ \mbox{} \\
 Le metriche sono distinte in tre categorie: processi, documentazione e codifica. Per ciascuna di esse si indica il motivo per cui è stata scelta e la procedura di calcolo.
 
+\subparagraph{Classificazione}\mbox{} \\ \mbox{} \\
+Le metriche rispetteranno la seguente notazione: \\
+\centerline{\textbf{M[categoria][numero]}}
+dove: \begin{itemize}
+\item Categoria: indica la categoria della metrica, più precisamente:
+\begin{itemize}
+\item \textbf{P} per indicare le metriche dei processi;
+\item \textbf{D} per indicare le metriche dei documenti;
+\item \textbf{S} per indicare le metriche della codifica del software.
+\end{itemize}
+\item Numero: identifica in maniera univoca la metrica in ogni categoria, assume un valore intero a due cifre incrementale a partire da 1.
+\end{itemize}
+
 \pagebreak
-\subparagraph{Metriche per i processi}
+\subparagraph{Metriche per i processi} 
 	\rowcolors{2}{greyRowafk}{white}
 	\renewcommand{\arraystretch}{1.5}
 	\begin{center}
-	\begin{tabular}{ c | L{12cm} }
+	\begin{tabular}{ c | c | L{9.5cm} }
 		\rowcolor{greyafk}
-		\textcolor{white}{\textbf{Nome}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		Schedule Variance (SV)  & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \'E calcolata utilizzando la seguente formula: \newline
+		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}}& \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
+		Schedule Variance (SV)  & MP01 & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \'E calcolata utilizzando la seguente formula: \newline
 \[ SV = DCE-DCP\]
 dove: \begin{itemize}
 \item \textbf{DCE}: data conclusione effettiva;
 \item \textbf{DCP}: data conclusione pianificata.
 \end{itemize}
 Se $SV \leq 0$ significa che l’attività o il processo è in pari o in anticipo, invece, se $SV > 0$ significa che l’attività è in ritardo. \\	
-		Budget Variance (BV) & Permette di controllare i costi sostenuti alla data corrente rispetto al budget preventivato. Viene calcolata in fase di consuntivo di periodo utilizzando la seguente formula: \newline
+		Budget Variance (BV) & MP02 & Permette di controllare i costi sostenuti alla data corrente rispetto al budget preventivato. Viene calcolata in fase di consuntivo di periodo utilizzando la seguente formula: \newline
 		\[ BV[\%] = \frac{CP-CE}{CE} \]		
 dove: \begin{itemize}
 \item \textbf{CP}: costo preventivato;
@@ -332,10 +345,10 @@ Se $BV \geq 0$ indica che il budget sta venendo speso più lentamente di quanto 
 \rowcolors{2}{greyRowafk}{white}
 	\renewcommand{\arraystretch}{1.5}
 	\begin{center}
-	\begin{tabular}{ c | L{11cm} }
+	\begin{tabular}{ c | c | L{10cm} }
 		\rowcolor{greyafk}
-		\textcolor{white}{\textbf{Nome}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		Indice Gulpease (IG)  & \'E un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
+		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
+		Indice Gulpease (IG)  & MD01 & \'E un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
 \[ IG = 89 + \frac{300 \cdot (\#frasi) - 10 \cdot (\#lettere)}{\#parole} \] \newline
 Il risultato è un valore compreso nell'intervallo tra 0 e 100, dove il valore 100 indica la più alta leggibilità. Un indice inferiore a 80 indica documenti di difficile leggibilità per chi ha la licenza elementare, inferiore a 60 per chi ha la licenza media, inferiore a 40 per chi ha un diploma superiore.
 	\\
@@ -343,7 +356,23 @@ Il risultato è un valore compreso nell'intervallo tra 0 e 100, dove il valore 1
 	\end{center}	
 
 \subparagraph{Metriche per la codifica} \mbox{} \\ \mbox{} \\
-Le metriche per la codifica verranno inserite quando il \textit{TeamAFK} entrerà nella fase successiva del progetto, ossia la Revisione di Progettazione (RP).
+Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità del software.
+\rowcolors{2}{greyRowafk}{white}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{center}
+	\begin{tabular}{ C{4.5cm} | c | L{9.5cm} }
+		\rowcolor{greyafk}
+		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
+		Numero dei Metodi (NM)  & MS01 & Numero medio di metodi contenuti nelle classi di un oggetto. Un numero troppo alto di metodi può indicare la necessità di scomporre la classe. Un numero troppo basso deve far riflettere sull'effettiva utilità della classe in esame. 
+		\[ NM =\frac{\sum\#metodi}{\#classi}  \] \\
+		Numero di Parametri (NP) & MS02 & Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può
+indicare un’eccessiva complessità dello stesso. \\
+		Commenti per Linee di \newline Codice (CLC) & MS03 & Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione. 
+		\[ CLC = \frac{\#righe_commento}{\#tot_righe}\] \\
+		Code Coverage (CC) & MS04 & Percentuale delle linee di codice coperte dai test. Avere codice coperto da test riduce la possibilità di introdurre errori nel prodotto. 
+		\[ CC[\%] = \frac{\#righe\_codice\_coperte}{\#tot\_righe\_codice}\] \\
+	\end{tabular}
+	\end{center}
 
 \subsubsection{Verifica}
 Il processo di verifica ha come scopo la realizzazione di prodotti corretti, coesi e completi. Sono soggetti a verifica i documenti e il software.
@@ -356,6 +385,11 @@ Il processo di verifica deve rispettare i seguenti punti: \begin{itemize}
 \end{itemize}
 Il processo di verifica prende in input ciò che è già stato prodotto e lo restituisce in uno stato
 conforme alle aspettative (stabile). Per ottenere tale risultato ci si affida a processi di analisi e test.
+\paragraph{Strumenti di verifica}
+
+\paragraph*{Correzione ortografica} \mbox{} \\ \mbox{} \\
+Il controllo ortografico viene eseguito principalmente basandosi sugli strumenti integrati in \TeX{}maker, il quale fornisce un dizionario italiano e sottolinea in rosso le parole che non vi appartengono. 
+
 \paragraph{Analisi} \mbox{} \\ \mbox{} \\
 Il processo di analisi si suddivide in statica e dinamica.
 
