@@ -81,10 +81,10 @@
 					\item Stabilire le prospettive e funzionalità del prodotto in base ai vincoli fissati dal proponente;
 					\item Fornire ai verificatori riferimenti affidabili per la loro attività di controllo;
 					\item Valutare rischi, costi e benefici in relazione al carico di lavoro.
-				\end{itemize} \newline
-			\textbf{Aspettative} \newline \newline
-			L'obiettivo di quest'attività è quella di redigere un documento formale contenente tutti requisiti che richiesti dal progetto.\newline \newline
-			\textbf{Descrizione} \newline \newline
+				\end{itemize} 
+			\subparagraph*{Aspettative} \mbox{} \\ \mbox{} \\
+			L'obiettivo di quest'attività è quella di redigere un documento formale contenente tutti requisiti che richiesti dal progetto.
+			\subparagraph*{Descrizione} \mbox{} \\ \mbox{} \\
 			I requisiti saranno raccolti nel seguente modo:
 				\begin{itemize} \newline
 					\item lettura del capitolato d'appalto;
@@ -92,8 +92,7 @@
 					\item discussione tra i componenti del gruppo;
 					\item studio di casi d'uso.
 				\end{itemize}
-				\newline \newline
-				\textbf{Casi d'uso} \newline \newline
+				\subparagraph*{Casi d'uso} \mbox{} \\ \mbox{} \\
 				I casi d'uso sono scenari che descrivono una possibile sequenza di iterazioni dell'utente, visto come attore\glo attivo e/o passivo, e il sistema. La struttura di un caso d'uso è la seguente:
 				\begin{itemize}
 					\item codice identificativo;
@@ -104,14 +103,13 @@
 					\item descrizione;
 					\item scenario principale;
 					\item scenario alternativo (se presente);
-					\item inclusioni(se presenti);
-					\item estensioni(se presenti);
-					\item specializzazioni(se presenti);
+					\item inclusioni (se presenti);
+					\item estensioni (se presenti);
+					\item specializzazioni (se presenti);
 					\item precondizione;
 					\item postcondizione. 
 				\end{itemize}
-				\newline \newline
-				\textbf{Codice identificativo dei casi d'uso} \newline \newline
+				\subparagraph*{Codice identificativo dei casi d'uso} \mbox{} \\ \mbox{} \\
 			Il codice di ogni caso d'uso seguirà questo formalismo: \newline \newline
 			\centerline{\textbf{UC[codice\_padre].[codice\_figlio]}} \newline \newline
 			\textbf{Requisiti} \newline \newline
@@ -134,31 +132,31 @@
 							\item Q: qualitativo;
 							\item V: vincolo.
 						\end{itemize}
-						\item \textbf{Codice}: il quale è un identificatore univoco del requisito, e viene espresso in forma gerarchica padre/figlio.
+						\item \textbf{Codice identificativo}: il quale è un identificatore univoco del requisito, e viene espresso in forma gerarchica padre/figlio.
 					\end{itemize}
-					\item \textbf{classificazione}: specifica il peso del requisito facilitando la sua lettura anche se causa ridondanza;
-					\item \textbf{descrizione}: sintei completa di un requisito;
-					\item \textbf{fonti}: il requisito può avere le seguenti provenienze:
+					\item \textbf{Classificazione}: specifica il peso del requisito facilitando la sua lettura anche se causa ridondanza;
+					\item \textbf{Descrizione}: sintei completa di un requisito;
+					\item \textbf{Fonti}: il requisito può avere le seguenti provenienze:
 					\begin{itemize}
 						\item capitolato;
 						\item interno: requisito che gli analisti ritengono di aggiungere in base alle esigenze del team;
 						\item caso d'uso: il requisito proviene da uno o più casi d'uso, dei quali è necessario riportare il codice univoco di caso d'uso;
 						\item verbale: dopo un chiarimento da parte del proponente è possibile che sorga un requisito non preventivato. E le informazioni su di esso sono riportate e tracciati nei rispettivi verbali.
 					\end{itemize}
-				\end{itemize} \newline \newline
-				\textbf{UML} \newline \newline
+				\end{itemize} 
+				\subparagraph*{UML} \mbox{} \\ \mbox{} \\
 				I diagrammi UML\glo servono per descrivere un caso d'uso. Gli analisti dovranno utilizzare la versione v.2.0. \newline \newline
 	\subsection{Progettazione}
 		\subsubsection{Scopo}
-		Il processo di \textit{Progettazione} ha il copito di stabilire le migliori operazioni da effettuare, per fornire una soluzione soddisfacente per tutti gli stakeholders\glo. Per far ciò è necessario stabilire l'architettura\glo logica del prodotto. Sulla base del documento \textbf{Analisi dei requisiti} è possibile individuare le singole parti che compongono il prodotto, il loro dominio e una complessità trattabile. Una volta avute ben chiare queste peculiarità, sarà possibile determinare l'architettura del prodotto.
+		Il processo di \textit{Progettazione} ha il copito di stabilire le migliori operazioni da effettuare, per fornire una soluzione soddisfacente per tutti gli stakeholders\glo. Per far ciò è necessario stabilire l'architettura\glo logica del prodotto. Sulla base del documento \textit{Analisi dei Requisiti} è possibile individuare le singole parti che compongono il prodotto, il loro dominio e una complessità trattabile. Una volta avute ben chiare queste peculiarità, sarà possibile determinare l'architettura del prodotto.
 		\subsubsection{Descrizione}
 		Il processo di \textbf{Progettazione} si divide in:
 			\begin{itemize}
-				\item \textbf{Tecnology baseline}: mostra ad alto le specifiche di progettazione del prodotto e le sue componenti, elencando i diagrammi UML utilizzati per descrivere l'architettura delprodotto.
+				\item \textbf{Technology baseline}: mostra ad alto le specifiche di progettazione del prodotto e le sue componenti, elencando i diagrammi UML utilizzati per descrivere l'architettura delprodotto.
 				\item \textbf{Product baseline}: parte incrementale del prodotto finale da cui continuare a lavorare, integrando le specifiche riportate nella Tecnology Baseline e  definendo anche i test necessari alla verifica.
 			\end{itemize} 
-			\paragraph{Tecnology baseline} \mbox{} \\ \mbox{} \\
-			Il progettista incaricato, sii occuperà di includere:
+			\paragraph{Technology baseline} \mbox{} \\ \mbox{} \\
+			Il progettista incaricato, si occuperà di includere:
 			\begin{itemize}
 				\item \textbf{Diagrammi UML}:
 				\begin{itemize}
@@ -167,7 +165,7 @@
 					\item diagrammi di attività;
 					\item diagrammi di sequenza;
 				\end{itemize}
-				\item \textbf{Teconologie utilizzate}: vengono mostrte le tecnologite impiegate, mostrando le loro funzinalità, pregi e difetti;
+				\item \textbf{Tecnologie utilizzate}: vengono mostrate le tecnologie impiegate, mostrando le loro funzinalità, pregi e difetti;
 				\item \textbf{Design pattern}\glo : sono esposti i design pattern adottati per rappresentare l'architettura del prodotto. Tutti i design pattern devono essere accompagnati da un diagramma e una descrizione delle sue caratteristiche;
 				\item \textbf{Tracciamento delle componenti}: viene motrata la relazione tra il componente e il requisito che intende rispettare; 
 				\item \textbf{Test di integrazione}: sono operazioni che si occupano di verificare l'unione tra le parti, in base alle rispettive interfaccie.
@@ -175,9 +173,9 @@
 			\paragraph{Product baseline} \mbox{} \\ \mbox{} \\
 			Gli aspetti su cui la  Product baseline si sofferma sono:
 				\begin{itemize}
-					\item \textbf{definizione delle classi}: ogni classe deve essere descritta, specificando scopo e funionalità;
-					\item \textbf{tracciamento delle classi}: ovvero identificare il requisito a cui si lega una classe;
-					\item \textbf{test di unità}: ovvero verificare le funzionalità della sola classe, senza metterla in relazione con altre componenti del sistema.
+					\item \textbf{Definizione delle classi}: ogni classe deve essere descritta, specificando scopo e funionalità;
+					\item \textbf{Tracciamento delle classi}: ovvero identificare il requisito a cui si lega una classe;
+					\item \textbf{Test di unità}: ovvero verificare le funzionalità della sola classe, senza metterla in relazione con altre componenti del sistema.
 				\end{itemize}
 	\subsection{Codifica}
 		\subsubsection{Scopo}
@@ -205,8 +203,10 @@
 
 	\subsection{Strumenti}
 	Gli strumenti utilizzati nel processo di \textit{Codifica} sono:
-	\subsubsection{ESLint}: plug-in\glo utilizzato per effettuare analisi statica del codice, e rilevare problematiche nei pattern codificati in linguaggio JavaScript\glo.
-	\subsubsection{Draw.io}: programma utilizzato per la creazione di diagrammi UML.
+	\subsubsection{ESLint}
+	\'E plug-in\glo utilizzato per effettuare analisi statica del codice, e rilevare problematiche nei pattern codificati in linguaggio JavaScript\glo.
+	\subsubsection{Draw.io}
+	Programma utilizzato per la creazione di diagrammi UML.
 	\subsubsection{IntelliJ IDEA}
 	IDE\glo utilizzato per la codifica in JavaScript, garantendo la piena compatibilità con i sistemi operativi Linux, Windows e MacOS.\\
 	\centerline{\href{https://www.jetbrains.com/idea/}}
