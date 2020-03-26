@@ -133,6 +133,15 @@ Alcuni esempi \textbf{non corretti} sono: \begin{itemize}
 Ogni voce di un elenco o sottoelenco comincia per lettera minuscola, e termina per ";", eccetto l'ultima che termina per ".". 
 Se le voci contengono una descrizione, andranno sritte in grassetto.
 
+\subsubsection{Didascalia}
+Nella didascalia deve comparire il numero della sezione a cui l'immagine o tabella si riferisce, seguita dal numero progressivo delle stesse di quella sezione e una breve descrizione: \\
+\centerline{\textbf{X.Y.Z: <descrizione>}}
+\begin{itemize}
+\item \textbf{X.Y}: rappresenta la sezione;
+\item \textbf{Z}: rappresenta il numero progressivo della tabella o immagine nella sezione X.Y;
+\item \textbf{descrizione}: breve descrizione identificativa.
+\end{itemize}
+
 \subsubsection{Formati comuni}
 In conformità allo standard ISO 8601\footnote{ISO 8601: standard internazionale per la rappresentazione di date e orari.}:\begin{itemize}
 \item le date devono essere scritte secondo il formato gregoriano: \\
@@ -172,15 +181,11 @@ Le diverse fasi del progetto sono le seguenti:
 
 \subsection{Elementi grafici}
 \subsubsection{Immagini}
-Le immagini sono centrate e hanno una breve didascalia descrittiva. Tutte le immagini devono aver il formato \texttt{.png}\glo .
+Le immagini sono centrate e hanno una breve didascalia descrittiva sottostante. Tutte le immagini devono aver il formato \texttt{.png}\glo.
 
 \subsubsection{Tabelle}
 Le tabelle sono scritte allo stesso modo in tutti i documenti \LaTeX{}: fare riferimento alla Wiki di Overleaf \url{https://www.overleaf.com/learn/latex/tables}. \\
-Ogni tabella deve essere accompagnata dalla propria didascalia descrittiva (caption), da posizionare subito sopra la tabella.
-Nella didascalia deve comparire il numero della sezione a cui si riferisce, seguita dal numero progressivo delle tabelle di quella sezione: \begin{itemize}
-\item \textbf{X.Y}: rappresenta la sezione;
-\item \textbf{Z}: rappresenta il numero progressivo della tabella nella sezione X.Y .
-\end{itemize}
+Ogni tabella deve essere accompagnata dalla propria didascalia descrittiva (caption), da posizionare al di sopra della tabella. \\
 Fanno eccezione le tabelle del \textit{Registro delle Modifiche} che non hanno didascalia e le tabelle dei casi d'uso presenti nel documento di \textit{Analisi dei Requisiti}.
 
 \subsubsection{Diagrammi UML}
@@ -296,7 +301,7 @@ L'obiettivo è quello di ottenere software e documentazione di qualità soddisfa
 \subsubsection{Strumenti}
 Gli strumenti utilizzati per la qualità sono:
 \begin{itemize}
-\item forniti dallo standard ISO-12207;
+\item forniti dallo standard ISO-12207\footnote{ISO-12207: standard ISO per la gestione del ciclo di vita del software.};
 \item le metriche.
 \end{itemize}
 
@@ -315,14 +320,15 @@ dove: \begin{itemize}
 \end{itemize}
 \item Numero: identifica in maniera univoca la metrica in ogni categoria, assume un valore intero a due cifre incrementale a partire da 1.
 \end{itemize}
+Se nelle formule di calcolo delle metriche è presente il simbolo "\#", va inteso come la parola "numero". Un esempio può essere il seguente:
+\[ \#parole\_doc = numero\ di\ parole\ presenti\ nel\ documento \]
 
-\pagebreak
-\subparagraph{Metriche per i processi} 
-	\rowcolors{2}{greyRowafk}{white}
-	\renewcommand{\arraystretch}{1.5}
+\subparagraph{Metriche per i processi}  \mbox{} \\ 
+\begin{table}[H]
+\caption{Metriche dei processi}
 	\begin{center}
 	\begin{tabular}{ c | c | L{9.5cm} }
-		\rowcolor{greyafk}
+		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}}& \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
 		Schedule Variance (SV)  & MP01 & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \'E calcolata utilizzando la seguente formula: \newline
 \[ SV = DCE-DCP\]
@@ -337,16 +343,19 @@ dove: \begin{itemize}
 \item \textbf{CP}: costo preventivato;
 \item \textbf{CE}: costo effettivo.
 \end{itemize}
-Se $BV \geq 0$ indica che il budget sta venendo speso più lentamente di quanto pianificato, se negativo invece indica che il budget sta venendo speso più velocemente di quanto pianificato.
+Se $BV \geq 0$ indica che il budget sta venendo speso più lentamente di quanto pianificato, se negativo invece indica che il budget sta venendo speso più velocemente di quanto pianificato. \\
+Produttività (P) & MP03 & Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. E’ misurata in termini di numero di linee di codice (\hyperref[par:MS01]{LOC}) sviluppate da una persona nell’unità di tempo stabilita (settimana). E’utilizzata per valutare lo sforzo richiesto per lo sviluppo  del progetto a fronte delle sue dimensioni. 
+\[ Pmedia = \frac{LOC}{settimana}\]
 	\end{tabular}
 	\end{center}
+	\end{table}
 \pagebreak
-\subparagraph{Metriche per i documenti}
-\rowcolors{2}{greyRowafk}{white}
-	\renewcommand{\arraystretch}{1.5}
+\subparagraph{Metriche per i documenti}\mbox{} \\ 
+\begin{table}[H]
+\caption{Metriche dei documenti}
 	\begin{center}
 	\begin{tabular}{ c | c | L{10cm} }
-		\rowcolor{greyafk}
+		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
 		Indice Gulpease (IG)  & MD01 & \'E un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
 \[ IG = 89 + \frac{300 \cdot (\#frasi) - 10 \cdot (\#lettere)}{\#parole} \] \newline
@@ -354,26 +363,29 @@ Il risultato è un valore compreso nell'intervallo tra 0 e 100, dove il valore 1
 	\\
 	\end{tabular}
 	\end{center}	
-
+	\end{table}
+\pagebreak
 \subparagraph{Metriche per la codifica} \mbox{} \\ \mbox{} \\
-Le metriche presentate in questa sezione hanno come scopo fornire delle metriche per garantire un buon livello di qualità del software.
-\rowcolors{2}{greyRowafk}{white}
-	\renewcommand{\arraystretch}{1.5}
+Questa sezione ha lo scopo di fornire delle metriche per garantire un buon livello di qualità del software.
+\begin{table}[H]
+	\caption{Metriche del software}
 	\begin{center}
 	\begin{tabular}{ C{4.5cm} | c | L{9.5cm} }
-		\rowcolor{greyafk}
+		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		Numero dei Metodi (NM)  & MS01 & Numero medio di metodi contenuti nelle classi di un oggetto. Un numero troppo alto di metodi può indicare la necessità di scomporre la classe. Un numero troppo basso deve far riflettere sull'effettiva utilità della classe in esame. 
+		\label{par:MS01}Linee di Codice (LOC) & MS01 & Rappresenta  le  dimensioni  del  codice  sorgente  (di  tutto  il  prodotto  software oppure di quello sviluppato in una versione specifica). \'E espresso in termini di numero di linee di codice, ed è utilizzato per dimensionare la produttività delle persone e da questa lo sforzo richiesto per sviluppare il prodotto. \\
+		Numero dei Metodi (NM)  & MS02 & Numero medio di metodi contenuti nelle classi di un oggetto. Un numero troppo alto di metodi può indicare la necessità di scomporre la classe. Un numero troppo basso deve far riflettere sull'effettiva utilità della classe in esame. 
 		\[ NM =\frac{\sum\#metodi}{\#classi}  \] \\
-		Numero di Parametri (NP) & MS02 & Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può
+		Numero di Parametri (NP) & MS03 & Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può
 indicare un’eccessiva complessità dello stesso. \\
-		Commenti per Linee di \newline Codice (CLC) & MS03 & Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione. 
+		Commenti per Linee di \newline Codice (CLC) & MS04 & Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione. 
 		\[ CLC = \frac{\#righe\_commento}{\#tot\_righe}\] \\
-		Code Coverage (CC) & MS04 & Percentuale delle linee di codice coperte dai test. Avere codice coperto da test riduce la possibilità di introdurre errori nel prodotto. 
-		\[ CC[\%] = \frac{\#righe\_codice\_coperte}{\#tot\_righe\_codice}\] \\
+		Code Coverage (CC) & MS05 & Percentuale delle linee di codice coperte dai test. Avere codice coperto da test riduce la possibilità di introdurre errori nel prodotto. 
+		\[ CC[\%] = \frac{\#righe\_codice\_testate}{\#tot\_righe\_codice}\] \\
 	\end{tabular}
 	\end{center}
-
+	\end{table}
+\pagebreak
 \subsubsection{Verifica}
 Il processo di verifica ha come scopo la realizzazione di prodotti corretti, coesi e completi. Sono soggetti a verifica i documenti e il software.
 Il processo di verifica deve rispettare i seguenti punti: \begin{itemize}
@@ -404,7 +416,7 @@ A seguire sono descritte le liste di controllo utilizzabili per le ispezioni:
 \caption{Errori frequenti nei documenti}
 \begin{center}
 \begin{tabular}{C{4cm} | C{12cm}}
-\rowcolor{greyafk}
+\rowcolor{redafk}
 \textcolor{white}{\textbf{Oggetto}} & \centerline{\textcolor{white}{\textbf{Controllo}}} \\
 Formato data & Deve seguire il formato gregoriano YYYY-MM-DD \\
 Sintassi & La frase è troppo complessa e deve essere semplificata \\

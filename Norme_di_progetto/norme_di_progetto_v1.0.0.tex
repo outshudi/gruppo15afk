@@ -4,21 +4,26 @@
 \usepackage{amsmath}
 \input{sezioni/copertina.tex}
 \makeindex
-\definecolor{greyafk}{RGB}{255, 71, 87}
-\definecolor{greyRowafk}{RGB}{234, 234, 234}
-\rowcolors{2}{greyRowafk}{white}
-\renewcommand{\arraystretch}{1.5}
-
 
 \begin{document}
 \copertina{}
 
+%definizione colori per tabelle (tranne copertina)
+\definecolor{redafk}{RGB}{255, 71, 87}
+\definecolor{grey2}{RGB}{204, 204, 204}
+\definecolor{greyRowafk}{RGB}{234, 234, 234}
+\rowcolors{2}{grey2}{greyRowafk}
+\renewcommand{\arraystretch}{1.5}
+
 \newpage
 \input{sezioni/registroModifiche.tex}
+
+%Didascalia tabelle/immagini (prendono come riferimento la subsection)
 \counterwithin{table}{subsection}
 \counterwithin{figure}{subsection}
 \newpage
 
+%indice, indice figure e indice tabelle
 \tableofcontents
 \newpage
 \listoffigures
@@ -26,16 +31,16 @@
 \listoftables
 \newpage
 
-\input{sezioni/introduzione.tex}
-\pagebreak
+%\input{sezioni/introduzione.tex}
+%\pagebreak
 
-\input{sezioni/processi_primari.tex}
-\pagebreak
+%\input{sezioni/processi_primari.tex}
+%\pagebreak
 	
 \input{sezioni/processi_di_supporto.tex}
 \pagebreak
 	
-\input{sezioni/processi_organizzativi.tex}
-\pagebreak
+%\input{sezioni/processi_organizzativi.tex}
+%\pagebreak
 
 \end{document}
