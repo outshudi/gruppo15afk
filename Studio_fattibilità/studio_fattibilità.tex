@@ -1,0 +1,46 @@
+\documentclass[a4paper, oneside, openany, dvipsnames, table, 12pt]{article}
+\usepackage{../Template/AFKstyle}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\input{sezioni/copertina.tex}
+\makeindex
+
+\begin{document}
+\copertina{}
+
+%definizione colori per tabelle (tranne copertina)
+\definecolor{redafk}{RGB}{255, 71, 87}
+\definecolor{grey2}{RGB}{204, 204, 204}
+\definecolor{greyRowafk}{RGB}{234, 234, 234}
+\rowcolors{2}{grey2}{greyRowafk}
+\renewcommand{\arraystretch}{1.5}
+
+\newpage
+\input{sezioni/registroModifiche.tex}
+\newpage
+%indice, indice figure e indice tabelle
+\tableofcontents
+\newpage
+
+\input{sezioni/introduzione.tex}
+\pagebreak
+
+\input{sezioni/c1.tex}
+\pagebreak
+
+\input{sezioni/c2.tex}
+\pagebreak
+
+\input{sezioni/c3.tex}
+\pagebreak
+
+\input{sezioni/c4.tex}
+\pagebreak
+
+\input{sezioni/c5.tex}
+\pagebreak
+
+\input{sezioni/c6.tex}
+\pagebreak
+
+\end{document}
