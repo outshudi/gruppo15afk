@@ -7,6 +7,14 @@
 
 \begin{document}
 \copertina{}
+
+%definizione colori per tabelle (tranne copertina)
+\definecolor{redafk}{RGB}{255, 71, 87}
+\definecolor{grey2}{RGB}{204, 204, 204}
+\definecolor{greyRowafk}{RGB}{234, 234, 234}
+\rowcolors{2}{grey2}{greyRowafk}
+\renewcommand{\arraystretch}{1.5}
+
 \input{sezioni/registroModifiche.tex}
 \newpage
 \tableofcontents
@@ -45,6 +53,12 @@ AWS (acronimo di Amazon Web Services) sono un insieme di servizi di cloud comput
 
 \newpage
 \section{B}
+\textbf{Back end} \\
+Programma con il quale l’utente interagisce indirettamente, di solito attraverso l’utilizzo di un’applicazione \hyperref[par:frontend]{Front-end}.
+
+\textbf{BDD} \\
+Il Behavior Driven Development è una metodologia di sviluppo del software basata sul \hyperref[par:tdd]{test-driven development} che incoraggia la collaborazione tra gli sviluppatori.
+
 \label{par:blockC}
 \textbf{Blockchain} \\
 La blockchain è una sottofamiglia di tecnologie in cui il registro è strutturato come una catena di blocchi contenenti le transazioni e la cui validazione è affidata a un meccanismo di consenso. 
@@ -53,7 +67,7 @@ Permette inoltre la creazione e gestione di un grande database distribuito per l
 \textbf{Branch} \\
 Comanda di Git utilizzato per l’implementazione di funzionalità tra loro isolate, cioè sviluppate in modo indipendente l’una dall’altra ma a partire dalla stessa radice.
 
-\textbf{Business logic} \\
+\textbf{Business Logic} \\
 \'E la logica di elaborazione, sotto forma di codice sorgente, che gestisce la comunicazione tra un'interfaccia utente e un database.
 Essa contiene quindi le informazioni che definiscono o vincolano il modo in cui opera un'azienda.
 
@@ -78,6 +92,9 @@ Indica un paradigma di erogazione di servizi offerti on demand da un fornitore a
 
 \textbf{Consistenza} \\
 La consistenza di una transazione, ossia una sequenza di operazioni, è la sua capacità di non violare i vincoli referenziali e di integrità della base di dati.
+
+\textbf{Continuous Delivery} \\
+\'E un modello introdotto nello sviluppo di software per eseguire contemporaneamente le fasi di sviluppo, rilascio, feedback e gestione della qualità in brevi intervalli e in un ciclo continuo. Lo sviluppo in questo modo diventa più efficiente e il cliente riceve prima il prodotto, anche quando questo non è ancora pronto. La Continuous Delivery fornisce feedback allo sviluppatore sulla base di test automatizzati che controllano principalmente il build ogniqualvolta viene modificato il codice sorgente.
 
 \label{par:container}
 \textbf{Contenitore} \\
@@ -129,6 +146,7 @@ Misura l'abilità di raggiungere l'obiettivo prefissato impiegando le risorse mi
 \textbf{Framework} \\
 Piattaforma che funge da strato intermedio tra un sistema operativo e il software che lo utilizza.
 
+\label{par:frontend}
 \textbf{Front-end} \\
 Programma con il quale l’utente interagisce direttamente, che fa da interfaccia tra l’utente e un altro programma.
 
@@ -207,6 +225,9 @@ Software non protetto da copyright e liberamente modificabile dagli utenti.
 
 \newpage
 \section{P}
+\textbf{Parser} \\
+Algoritmo che, sulla base di grammatica e lessico di una lingua data, effettua un’analisi automatica della struttura morfologica delle parole.
+
 \textbf{PNG} \\
 Portable Network Graphics (PNG) è un formato di file utilizzato in informatica per memorizzare immagini.
 
@@ -278,6 +299,10 @@ Inventata da V. Vapnik nel 1990, è un modello di apprendimento automatico super
 \section{T}
 \textbf{Telegram} \\
 Telegram è un servizio di messaggistica istantanea e broadcasting. Caratteristiche di Telegram sono la possibilità di scambiare messaggi di testo tra due utenti o tra gruppi fino a 200.000 partecipanti, effettuare chiamate vocali cifrate "punto-punto", scambiare messaggi vocali, videomessaggi, fotografie, video, sticker e file di qualsiasi tipo.
+
+\label{par:tdd}
+\textbf{Test Driven Development} \\
+Il TDD è un modello di sviluppo del software che prevede che la stesura dei test automatici avvenga prima di quella del software che deve essere sottoposto a test, e che lo sviluppo del software applicativo sia orientato esclusivamente all'obiettivo di passare i test automatici precedentemente predisposti.
 
 \textbf{Typescript} \\
 Linguaggio di programmazione libero ed Open source sviluppato da Microsoft. Si tratta di un Super-set di JavaScript che basa le sue caratteristiche su ECMAScript6.
