@@ -1,6 +1,6 @@
 \section{Processi di Supporto}
 \subsection{Documentazione}
-Ogni processo\glo e attività\glo significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante l'intero ciclo di vita del software. I documenti sono consultabili nelle relative sezioni della repository\glo: \url{https://github.com/teamafkSWE/docs}. 		
+Ogni processo\glo e attività\glo significativi volti allo sviluppo del progetto sono documentati. Lo scopo di questa sezione è definire gli standard che riguardano i documenti prodotti durante l'intero ciclo di vita del software. I documenti sono consultabili nelle relative sezioni della repository\glo: \url{https://github.com/teamafkSWE/PredireConGrafana-docs}. 		
 
 \subsection{Descrizione}
 Questo capitolo contiene le decisioni e le norme che sono state scelte per la scrittura, verifica e approvazione della documentazione ufficiale. L'insieme di tali norme garantisce consistenza ed omogeneità nella stesura di testi.
@@ -9,7 +9,7 @@ Questo capitolo contiene le decisioni e le norme che sono state scelte per la sc
 Ogni documento segue le seguenti fasi di ciclo di vita:
 \begin{itemize}
 \item \textbf{Sviluppo}: creazione del documento, definizione della struttura e prima stesura di tutte le parti che lo compongono;
-\item \textbf{Verifica}: un documento entra in fase di verifica successivamente al suo completamento. \'E dovere del \textit{Responsabile} assegnare tale compito ad almeno un verificatore. Quest'ultimo deve applicare le procedure di verifica e segnalare eventuali modifiche da apportare al documento;
+\item \textbf{Verifica}: un documento entra in fase di verifica successivamente al suo completamento. \'E dovere del \textit{Responsabile} assegnare tale compito ad almeno un \textit{Verificatore}. Quest'ultimo deve applicare le procedure di verifica e segnalare eventuali modifiche da apportare al documento;
 \item \textbf{Approvazione}: il \textit{Responsabile} approva il documento, che sarà quindi ritenuto completo e pronto per il rilascio.
 \item \textbf{Rivisitazione e ampliamento}: con l'avanzare del progetto si prevede di espandere ciascun documento, aggiungendo nuove sezioni o migliorando quanto scritto in precedenza. Sarà compito del \textit{Responsabile} istanziare una nuova fase di sviluppo per provvedere alla realizzazione di questi aggiornamenti. Al termine di essa, vengono eseguite nuovamente le fasi di verifica ed approvazione del documento.
 \end{itemize}
@@ -21,7 +21,8 @@ Ogni documento segue le seguenti fasi di ciclo di vita:
 Un file "nome\_file.tex" (in cui "nome\_file" verrà sostituito dal nome del documento) raccoglie, tramite comandi di input, le sezioni di cui è composto il documento. Tra i file in input ci sono:
 \begin{itemize}
 \item "AFKstyle.sty", contenente i pacchetti necessari alla compilazione e i comandi relativi all'impostazione grafica;
-\item "copertina.tex", che contiene i comandi \LaTeX{} per l'impostazione della prima pagina del documento.
+\item "copertina.tex", che contiene i comandi \LaTeX{} per l'impostazione della prima pagina del documento;
+\item "registroModifiche.tex", contenente la tabella delle modifiche.
 \end{itemize}
 
 \subsubsection{Prima pagina}
@@ -45,13 +46,13 @@ Il frontespizio è la prima pagina del documento ed è così strutturato:\begin{
 Ogni documento dispone di un \textit{Registro delle Modifiche}: una tabella posta a seguito della prima pagina, contenente le modifiche apportate al documento. In essa sono indicati: \begin{itemize}
 \item versione del documento dopo la modifica;
 \item data della modifica;
+\item breve descrizione della modifica;
 \item nominativo di chi ha modificato;
-\item ruolo di chi ha modificato;
-\item breve descrizione della modifica.
+\item ruolo di chi ha modificato.
 \end{itemize}
 
 \subsubsection{Indice}
-L'indice ha lo scopo di riepilogare e dare una visione macroscopica della struttura del documento, mostrando le parti gerarchiche di cui è composto. Ogni documento è corredato dall'indice dei contenuti, posizionato dopo il registro delle modifiche. Se sono presenti immagini o tabelle all'interno del documento, l'indice dei contenuti è seguito prima dalla lista delle immagini, poi dalla lista delle tabelle.
+L'indice ha lo scopo di riepilogare e dare una visione macroscopica della struttura del documento, mostrando le parti gerarchiche di cui è composto. Ogni documento è corredato dall'indice dei contenuti, posizionato dopo il \textit{Registro delle modifiche}. Se sono presenti immagini o tabelle all'interno del documento, l'indice dei contenuti è seguito prima dalla lista delle immagini, poi dalla lista delle tabelle.
 
 \subsubsection{Contenuto principale}
 La struttura delle pagine di contenuto è così definita: \begin{itemize}
@@ -90,12 +91,12 @@ I documenti possono essere adibiti ad uso interno o esterno:
 \end{itemize}
 
 \subsubsection{Note a piè di pagina}
-Eventuali note vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una descrizione.
+Eventuali note vanno indicate nella pagina corrente, in basso a sinistra. Ogni nota deve riportare un numero e una breve descrizione.
 
 \subsection{Norme tipografiche}
 \subsubsection{Convenzioni sui nomi dei file}
 I nomi di file (estensione esclusa) e cartelle utilizzano la convenzione "Snake case\glo" e alcune regole aggiuntive elencate di seguito: \begin{enumerate}
-\item i nomi dei file composti da più parole usano il carattere \textit{underscore} come carattere separatore;
+\item i nomi dei file composti da più parole usano il carattere \textit{underscore} come carattere separatore, eccetto il file del \textit{Registro delle modifiche} nominato "registroModifiche.tex";
 \item i nomi sono scritti interamente in minuscolo;
 \item le preposizioni \textbf{vanno} messe.
 \end{enumerate}
@@ -132,7 +133,7 @@ Alcuni esempi \textbf{non corretti} sono: \begin{itemize}
 
 \subsubsection{Elenchi puntati}
 Ogni voce di un elenco o sottoelenco comincia per lettera minuscola, e termina per ";", eccetto l'ultima che termina per ".". 
-Se le voci contengono una descrizione, andranno sritte in grassetto e con la prima maiuscola.
+Se le voci contengono una descrizione, andranno sritte in grassetto e con la prima lettera maiuscola.
 
 \subsubsection{Didascalia}
 Nella didascalia deve comparire il numero della sezione a cui l'immagine o tabella si riferisce, seguita dal numero progressivo delle stesse di quella sezione e una breve descrizione: \\
@@ -219,7 +220,7 @@ L'obiettivo della configurazione è di creare ordine tra i documenti e il softwa
 
 \subsubsection{Versionamento}
 \paragraph{Versionamento dei documenti} \mbox{} \\ \mbox{} \\
-Ogni versione di qualsiasi documento deve corrispondere ad una riga della tabella delle modifiche. il numero di versione è composto da tre cifre: \\ \\
+Ogni versione di qualsiasi documento deve corrispondere ad una riga della tabella delle modifiche. Il numero di versione è composto da tre cifre: \\ \\
 \centerline{X.Y.Z} \\
 \begin{itemize}
 \item \textbf{X}: rappresenta una versione stabile del documento, resa tale dopo l'approvazione del \textit{Responsabile} di progetto: \begin{itemize}
@@ -247,7 +248,7 @@ I membri del team possono interagire con il VCS\glo sia da linea di comando, sia
 All'interno della repository principale sopra descritta, ci sono due differenti repository: \begin{itemize}
 \item \textbf{PredireConGrafana-docs}: contiene tutti i documenti ufficiali del progetto, suddivisi in specifiche cartelle: \\
 \centerline{\url{https://github.com/teamafkSWE/PredireConGrafana-docs}}  \begin{itemize}
-\item \textbf{Cartella principale - RR}: raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la Revisione dei Requisiti. In futuro, saranno aggiunte cartelle distinte nominate \textbf{RP, RQ} e \textbf{RA}, contenenti i file delle rispettive consegne;
+\item \textbf{Cartella principale - RR}: raccoglie i file sorgenti per la compilazione dei documenti, suddivisi tra esterni ed interni, realizzati per la \textit{Revisione dei Requisiti}. In futuro, saranno aggiunte cartelle distinte nominate \textbf{RP, RQ} e \textbf{RA}, contenenti i file delle rispettive consegne;
 \begin{itemize}
 \item[$\bullet$] \textbf{Tipologia\_di\_Documento}: ogni documento avrà la rispettiva cartella (e.i. Norme\_di\_Progetto), contenente tutti i file (sezioni ed immagini) necessari per la sua compilazione;
 \item[$\bullet$] \textbf{copertina.tex}: file che permetterà una facile e rapida modifica dell'impostazione testuale del frontespizio;
@@ -445,7 +446,7 @@ scritto funzioni correttamente. I test devono:
 Ci sono vari tipi di test, ognuno dei quali ha un diverso oggetto di verifica e scopo.
 
 \paragraph*{Test funzionali} \mbox{} \\ \mbox{} \\
-Test condotti per valutare la conformità di un componente o sistema con requisiti funzionali. Ne fanno parte: \begin{itemize}
+Test condotti per valutare la conformità di un componente o sistema con requisiti\glo funzionali. Ne fanno parte: \begin{itemize}
 \item \textbf{Test di unità\glo}: si eseguono su unità di software, e si concentrano sul loro funzionamento individuale;
 \item \textbf{Test di integrazione}: verificano se sono rispettati i contratti di interfaccia tra più moduli o sub-system (interni o esterni);
 \item \textbf{Test di accettazione UAT}: gli UAT (User Acceptance Testing) si occupano di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento di questo test garantisce che il software sia pronto per essere rilasciato.
