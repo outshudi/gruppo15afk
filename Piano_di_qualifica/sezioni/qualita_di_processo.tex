@@ -1,17 +1,29 @@
 \section{Qualità di processo}
-Al fine di garantire la qualità del prodotto è necessario perseguire in primis la qualità dei processi che lo definiscono. Si è deciso dunque di aderire allo standard ISO/IEC 15504: quest'ultimo permette di valutare il livello di maturità e capacità (capability) dei processi, al fine di apportare modifiche migliorative. \\
-Sono fissati i seguenti obiettivi: \begin{itemize}
+\subsection{Scopo}
+Al fine di garantire la qualità del prodotto è necessario perseguire in primis la qualità dei processi che lo definiscono. Si è deciso dunque di seguire il principio di miglioramento continuo (PDCA) e di adottare lo standard ISO/IEC 15504\footnote{ISO/IEC 15504: insieme di documenti di standard tecnici relativi ai processi di sviluppo del software e relative funzioni di business e, in particolare, alla loro valutazione.} denominato SPICE\glo: quest'ultimo permette di valutare il livello di maturità e capacità (capability) dei processi, al fine di apportare modifiche migliorative. 
+\subsubsection*{PDCA}
+Le fasi descritte dal PDCA sono le seguenti: 
+\begin{itemize}
+\item \textbf{Plan}: fase di pianificazione dove si decidono e si individuano gli obiettivi di qualità e i risultati desiderati;
+\item \textbf{Do}: si mette in atto il piano stabilito nella fase precedente;
+\item \textbf{Check}: si verificano e si confrontano i dati in output dalla fase precedente con i risultati previsti in fase di Planning;
+\item \textbf{Act}: si individuano le cause delle eventuali discordanze riscontrate in fase di Check e si determinano le azioni da intraprendere per risolverle e migliorare il processo.
+\end{itemize}
+\subsection{Obiettivi}
+Sono fissati inoltre i seguenti obiettivi: \begin{itemize}
 \item rispetto di tempi e costi descritti nel \textit{Piano\_di\_Progetto\_v1.0.0};
 \item continuo miglioramento dei processi;
 \item misurabilità dello stato dei processi.
 \end{itemize}
-Per misurare la qualità, sono state scelte delle speifiche metriche; ognuna di queste fa uso di scale differenti e fissate a priori. Ogni metriche conterrà:
+\subsection{Metriche}
+Per misurare la qualità, sono state scelte delle specifiche metriche che monitorano lo stato dei processi del progetto analizzando l’uso che essi fanno di tempo e denaro. Sono particolarmente utili per il \textit{Responsabile}, che può quindi decidere di apportare modifiche alla pianificazione quando necessario.\\
+Ogni metrica conterrà:
 \begin{itemize}
 \item \textbf{Nome};
 \item \textbf{Descrizione};
 \item \textbf{Parametri}: range di valori su cui confrontare le misure ottenute. Sono definiti i seguenti intervalli: \begin{itemize}
-\item accettabile;
-\item ottimale.
+\item accettabile: intervallo in cui il valore misurato viene considerato sufficiente, seppur migliorabile;
+\item ottimale: intervallo in cui il valore misurato viene ritenuto ottimo.
 \end{itemize}
 Essi possono essere: \begin{itemize}
 \item \textbf{aperti}, se gli estremi non sono compresi. Esempio: (a, b) = $a < x < b$; 
@@ -20,11 +32,7 @@ Essi possono essere: \begin{itemize}
 \item \textbf{illimitati}, se almeno uno degli estremi è infinito.
 \end{itemize}
 \end{itemize}
-Non saranno trattati in questo documento la descrizione e gli strumenti per il calcolo delle metriche, che sono reperibili nelle \textit{Norme\_di\_Progetto\_v1.0.0}.
-
-\subsubsection{Metriche dei processi}
-Le metriche presentate in questa sezione monitorano lo stato dei processi del progetto analizzando l’uso
-che essi fanno di tempo e denaro. Sono particolarmente utili per il \textit{Responsabile}, che può quindi decidere di apportare modifiche alla pianificazione quando necessario.
+\textbf{Attenzione}: in questo documento \textbf{non} saranno trattati la descrizione e gli strumenti per il calcolo delle metriche, reperibili invece nelle \textit{Norme\_di\_Progetto\_v1.0.0}.
 
 \paragraph{MP01 - Schedule Variance} \mbox{} \\ \mbox{} \\
 La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \\ \\ 
@@ -43,8 +51,7 @@ Permette di controllare i costi sostenuti alla data corrente rispetto al budget 
 \end{itemize}
 
 \paragraph{MP03 - Produttività} \mbox{} \\ \mbox{} \\
-Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. \'E misurata in termini di numero di linee di codice (LOC) sviluppate da una persona
-nell’unità di tempo stabilita (settimana).\\ \\ 
+Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. \\ \\ 
 \textbf{Parametri adottati:} 
 \begin{itemize}
 	\item Range accettabile: [50, 100];
