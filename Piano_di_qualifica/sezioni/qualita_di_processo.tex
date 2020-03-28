@@ -1,0 +1,54 @@
+\section{Qualità di processo}
+Al fine di garantire la qualità del prodotto è necessario perseguire in primis la qualità dei processi che lo definiscono. Si è deciso dunque di aderire allo standard ISO/IEC 15504: quest'ultimo permette di valutare il livello di maturità e capacità (capability) dei processi, al fine di apportare modifiche migliorative. \\
+Sono fissati i seguenti obiettivi: \begin{itemize}
+\item rispetto di tempi e costi descritti nel \textit{Piano\_di\_Progetto\_v1.0.0};
+\item continuo miglioramento dei processi;
+\item misurabilità dello stato dei processi.
+\end{itemize}
+Per misurare la qualità, sono state scelte delle speifiche metriche; ognuna di queste fa uso di scale differenti e fissate a priori. Ogni metriche conterrà:
+\begin{itemize}
+\item \textbf{Nome};
+\item \textbf{Descrizione};
+\item \textbf{Parametri}: range di valori su cui confrontare le misure ottenute. Sono definiti i seguenti intervalli: \begin{itemize}
+\item accettabile;
+\item ottimale.
+\end{itemize}
+Essi possono essere: \begin{itemize}
+\item \textbf{aperti}, se gli estremi non sono compresi. Esempio: (a, b) = $a < x < b$; 
+\item \textbf{chiusi}, se gli estremi sono compresi. Esempio: [a, b] = $a \leq x \leq b$;
+\item \textbf{limitati}, se gli estremi sono numeri finiti;
+\item \textbf{illimitati}, se almeno uno degli estremi è infinito.
+\end{itemize}
+\end{itemize}
+Non saranno trattati in questo documento la descrizione e gli strumenti per il calcolo delle metriche, che sono reperibili nelle \textit{Norme\_di\_Progetto\_v1.0.0}.
+
+\subsubsection{Metriche dei processi}
+Le metriche presentate in questa sezione monitorano lo stato dei processi del progetto analizzando l’uso
+che essi fanno di tempo e denaro. Sono particolarmente utili per il \textit{Responsabile}, che può quindi decidere di apportare modifiche alla pianificazione quando necessario.
+
+\paragraph{MP01 - Schedule Variance} \mbox{} \\ \mbox{} \\
+La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \\ \\ 
+\textbf{Parametri adottati:} 
+\begin{itemize}
+\item Range accettabile: ($ -\infty $, 2];
+\item Range ottimale: ($ -\infty $, 0].
+\end{itemize}
+
+\paragraph{MP02 - Budget Variance} \mbox{} \\ \mbox{} \\
+Permette di controllare i costi sostenuti alla data corrente rispetto al budget preventivato. \\ \\ 
+\textbf{Parametri adottati:}  
+\begin{itemize}
+\item Range accettabile: [$-10\%$, $0\%$]; 
+\item Range ottimale: $ > 0\%$.
+\end{itemize}
+
+\paragraph{MP03 - Produttività} \mbox{} \\ \mbox{} \\
+Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. \'E misurata in termini di numero di linee di codice (LOC) sviluppate da una persona
+nell’unità di tempo stabilita (settimana).\\ \\ 
+\textbf{Parametri adottati:} 
+\begin{itemize}
+	\item Range accettabile: [50, 100];
+	\item Range ottimale: $ > 100$.
+\end{itemize}
+
+
