@@ -1,47 +1,59 @@
 \section{Qualifica di prodotto}
-Per stabilire la Qualità di prodotto, il team di Quality Management\glo adotta come standard di riferimento \textbf{ISO/IEC 9126} per stabilire il modello della qualità del software. Per stabilire il raggiungimento di un determinato obiettivo di qualità, ogni voce trattata è accompagnata da un apposito parametro. Nello specifico:
-\subsection{Funzionalità}
-Con funzionalità si intendono le capacità del prodotto di fornire funzioni che soddisfano le richieste stabilite, e possono essere analizzate secondo diversi aspetti. 
-\paragraph{Obiettivi}
+\subsection{Scopo}
+Per stabilire la Qualità di prodotto, il team di Quality Management\glo adotta come standard di riferimento \textbf{ISO/IEC 9126} per stabilire il modello della qualità del software. Per stabilire il raggiungimento di un determinato obiettivo di qualità, ogni voce trattata è accompagnata da un apposito parametro.
+\subsection{Obiettivi}
+Gli obiettivi di qualità che il team di Quality Management vuole raggiungere sono:
 \begin{itemize}
-	\item \textbf{Appropriatezza}: abilià del software nel fornire un insieme di funzioni conveniente svolgere le operazioni richieste;
-	\item \textbf{Accuratezza}: le azioni svolte dal software riportano i risultati attesi;
-	\item \textbf{Conformità}: il prodotto aderisce agli standard del settore presi come riferimento;
-	\item \textbf{Sicurezza}: capacità dell'applicativo nel proteggere le informazioni, impedendo che sistemi esterni possano entrarne in possesso.
+\item Affidabilità;
+\item Usabilità.
 \end{itemize}
-\paragraph{Metriche}
+\subsection{Metriche}
+In relazione agli obiettivi prestabiliti, il team adotta i seguenti strumenti per misurare la qualità del prodotto 
 \begin{itemize}
-	\item ;
-\end{itemize}
-\subsection{Affidabilità}
-In questa sottosezione vengono presi in considerazione tutti gli aspetti che permettono di stabilire il grado di fiducia che si può affidare al software in sutuazioni difficili che richiedono alte prestazioni.
-\paragraph{Obiettivi}
-\begin{itemize}
-	\item \textbf{Maturità}: capacità del software nell'evitare la produzione di errori;
-	\item \textbf{Tolleranza agli errori}: abilità del prodotto nel sopportare e matenere i carichi prestazionali aspettati in presenza di malfunzionamenti;
-	\item \textbf{Recuperabilità}: capacità nel ristabilire le prestazioni e nel recuperare 	informazioni rilevanti;
-	\item \textbf{Aderenza}: ovvero aderenza agli standard.
-\end{itemize}
-\paragraph{Metriche}
-\subparagraph{Code Coverage}
-Questo parametro ha il compito di misurare l'indice di copertura del codice da parte dei test: \\
-\[ CC = \frac{\#righe\_codice\_testato}{\#tot\_righe\_codice}\] \\
-\begin{itemize}
-\end{itemize}
-\subsection{Usabilità}
-L'usabilità indica la acapacità dell'utente di comprendere le funzionalita del prodotto e di poterle applicare.
-\paragraph{Metriche}
-\subparagraph{Facilità di comprensione}
-Per poter misurare questo aspetto, viene utilizzato l'indicatore Commenti per Linee di Codice, rilevando  il rapporto tra le rige di commento e il codice effettivo.
-\[ CLC = \frac{\#righe\_commento}{\#tot\_righe}\] \\
-Un codice sufficentemente commentato ha alte probabilità di essere facilmente compreso dall'utente, per questo si prendano come riferimento:
-\begin{itemize}
-\item valore desiderabile: $\geq$ 0.20;
-\item valore accettabile: $\geq$ 0.10.
+\item \textbf{Linee di Codice}: riportata con la sigla \textbf{MS01}, è la metrica che registra la dimensione di tutto il codice sorgente;
+\item \textbf{Numero dei Metodi}: con la sigla \textbf{MS02}, conteggia il numero di metodi presenti nella classe di un oggetto:
+	\begin{itemize}
+	\item valore ottimale: $\leq$ 8;
+	\item valore accettabile: $\leq$ 15;
+	\end{itemize}
+\item \textbf{Numero parametri}: riporta il numero di parametri di un metodo con il codice \textbf{MS03}
+	\begin{itemize}
+	\item valore ottimale: $\leq$ 3;
+	\item valore accettabile: $\leq$ 6.
+	\end{itemize}
+\item \textbf{Commenti per Linee di Codice}: riportato con la sigla \textbf{MS04}, è lo strumento che rileva il rapporto tra le rige di commento e il codice effettivo, sottolineando che:
+	\begin{itemize}
+		\item valore ottimale: $\geq$ 0.20;
+		\item valore accettabile: $\geq$ 0.10.
+	\end{itemize}
+\item \textbf{Code Coverage}: è la metrica con il codice \textbf{MS05} ed ha il compito di misurare l'indice di copertura del codice da parte dei test.
+
 \end{itemize}
 
-\subsection{Manutenibilità}
-\paragraph{Metriche}
-\subparagraph{Linee di codice}
-\subparagraph{Numero dei metodi}
-\subparagraph{Numero dei parametri}
+\begin{comment}
+\subsection{Metriche}
+In relazione agli obiettivi prestabiliti, il team adotta le seguenti metriche per misurare la qualità del prodotto.
+
+\subsubsection{MS01 - Linee di Codice}
+\subsubsection{MS02 - Numero dei Metodi}
+\begin{itemize}
+\item Range accettabile: [0, 15];
+\item Range ottimale: [0, 8].
+\end{itemize}
+\subsubsection{MS03 - Numero di parametri}
+\begin{itemize}
+\item Range accettabile: [0, 6];
+\item Range ottimale: [0, 3].
+\end{itemize}
+\subsubsection{MS04 - Commenti per Linee di Codice}
+\begin{itemize}
+\item Range accettabile: $\geq 0.20$;
+\item Range ottimale: $\geq 0.10$.
+\end{itemize}
+\subsubsection{MS05 - Code Coverage}
+\begin{itemize}
+\item Range accettabile: [85-95]\%;
+\item Range ottimale: 100\%.
+\end{itemize}
+
+\end{comment}
