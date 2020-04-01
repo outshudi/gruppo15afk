@@ -7,53 +7,39 @@ Gli obiettivi di qualità che il team di Quality Management vuole raggiungere so
 \item Affidabilità;
 \item Usabilità.
 \end{itemize}
-\subsection{Metriche}
-In relazione agli obiettivi prestabiliti, il team adotta i seguenti strumenti per misurare la qualità del prodotto 
+\subsection{Metriche della documentazione}
+In relazione agli obiettivi prestabiliti, il team adotta i diversi strumenti per misurare la qualità del prodotto, riportati di seguito.
+\subsubsection{MD01 - Indice di Gulpease}
+L'Indice di Gulpease registra la leggibilità di un documento.
 \begin{itemize}
-\item \textbf{Linee di Codice}: riportata con la sigla \textbf{MS01}, è la metrica che registra la dimensione di tutto il codice sorgente;
-\item \textbf{Numero dei Metodi}: con la sigla \textbf{MS02}, conteggia il numero di metodi presenti nella classe di un oggetto:
-	\begin{itemize}
-	\item valore ottimale: $\leq$ 8;
-	\item valore accettabile: $\leq$ 15;
-	\end{itemize}
-\item \textbf{Numero parametri}: riporta il numero di parametri di un metodo con il codice \textbf{MS03}
-	\begin{itemize}
-	\item valore ottimale: $\leq$ 3;
-	\item valore accettabile: $\leq$ 6.
-	\end{itemize}
-\item \textbf{Commenti per Linee di Codice}: riportato con la sigla \textbf{MS04}, è lo strumento che rileva il rapporto tra le rige di commento e il codice effettivo, sottolineando che:
-	\begin{itemize}
-		\item valore ottimale: $\geq$ 0.20;
-		\item valore accettabile: $\geq$ 0.10.
-	\end{itemize}
-\item \textbf{Code Coverage}: è la metrica con il codice \textbf{MS05} ed ha il compito di misurare l'indice di copertura del codice da parte dei test.
-
+\item Valore accettabile: [60, 80];
+\item Valore ottimale: [80, 100].
 \end{itemize}
-
-\begin{comment}
-\subsection{Metriche}
-In relazione agli obiettivi prestabiliti, il team adotta le seguenti metriche per misurare la qualità del prodotto.
-
+\subsection{Metriche del codice sorgente}
 \subsubsection{MS01 - Linee di Codice}
+\'E la metrica che registra la dimensione di tutto il codice sorgente.
 \subsubsection{MS02 - Numero dei Metodi}
+Questa metrica conteggia il numero di metodi presenti nella classe di un oggetto
 \begin{itemize}
 \item Range accettabile: [0, 15];
 \item Range ottimale: [0, 8].
 \end{itemize}
-\subsubsection{MS03 - Numero di parametri}
+\subsubsection{Numero dei Parametri}
+Questo strumento tiene conto del numero di parametri formali di un metodo.
 \begin{itemize}
 \item Range accettabile: [0, 6];
 \item Range ottimale: [0, 3].
 \end{itemize}
 \subsubsection{MS04 - Commenti per Linee di Codice}
+\'E il rapporto tra le rige di commento e il codice effettivo
 \begin{itemize}
-\item Range accettabile: $\geq 0.20$;
-\item Range ottimale: $\geq 0.10$.
+\item Range accettabile: [0, 0.20];
+\item Range ottimale: [0, 0.10].
 \end{itemize}
 \subsubsection{MS05 - Code Coverage}
+\'E la metrica con il compito di misurare l'indice di copertura del codice da parte dei test in termini percentuali.
 \begin{itemize}
-\item Range accettabile: [85-95]\%;
-\item Range ottimale: 100\%.
+\item Range accettabile: [70, 80)\%;
+\item Range ottimale: [80, 100]\%.
 \end{itemize}
-
-\end{comment}
+Seppur l'obiettivo del team di sviluppo sia quello di avere una Code Coverage del 100\%, tale traguardo potrebbe non essere raggiunto, in quanto comporterrebbe un aumento dei costi di progetto troppo elevati.
