@@ -36,3 +36,136 @@ Il numero limitato di differenti  attori che approcciano al prodotto in analisi 
 	\begin{itemize}
 		\item\textbf{Piattaforma Grafana}: è un sistema di monitoraggio di stream\glo di dati, che ospiterà il plug-in prodotto. Consente agli utenti registrati di lanciare alert e realizzare grafici modellati sui dati forniti in ingresso al plug-in.
  	\end{itemize}
+
+%%%%%%%%%%%%%%%%%
+	\subsection{UC1 - Creazione file JSON dai dati di addestramento}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: 
+				\begin{enumerate}
+					\item L’utente deve possedere dei dati di addestramento in un file formato CSV;
+					\item L’utente si trova sul tool di addestramento.
+				\end{enumerate}
+			\item\textbf{Postcondizioni}:
+				\begin{enumerate}
+					\item L’utente ha prodotto il file JSON contenente i predittori;
+					\item L’utente ha salvato il file JSON in locale.
+				\end{enumerate}
+			\item\textbf{Scenario Principale}:
+				\begin{enumerate}
+					\item (\hyperref[par:UC1.1]{UC1.1}) L’utente seleziona il pulsante “Carica Dati di Addestramento”;
+					\item (\label{par:UC1.2}) L’utente seleziona i dati di addestramento da caricare;
+					\item (\ref{UC1.3}) L’utente selezione l’algoritmo di previsione scelto attraverso la Combo Box “Scegli algoritmo”; 
+					\item (\ref{UC1.4}) Conferma delle operazioni; 
+					\item (\ref{UC1.5}) L’utente riceve in output il file JSON contenente i predittori per SVM/RL e decide dove salvarlo (localmente).  
+
+				\end{enumerate}
+			\item\textbf{Estensione}:
+				\begin{enumerate}
+					\item UC estende \ref{UC1.4}: Viene visualizzato un messaggio d’errore nel caso in cui l’operazione di caricamento del file non sia andata a buon fine;
+					\item  UC estende \ref{UC1.5}: Viene visualizzato un messaggio d’errore se il file di addestramento è incompatibile con l’algoritmo scelto. 
+				\end{enumerate}
+			\item\textbf{Inclusione}: UC include \ref{UC1.5}:  Viene visualizzato a schermo un messaggio di avvenuto successo della procedura.
+		\end{itemize}
+		
+		\label{par:UC1.1}
+		\subsection{UC1.1 - Selezione pulsante di caricamento dati di addestramento}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: L’utente si trova sul tool di addestramento. L’utente deve possedere il file CSV.
+			\item\textbf{Postcondizioni}:
+				\begin{enumerate}
+					\item L’utente ha cliccato il pulsante di caricamento dati;
+					\item Viene aperto la finestra che visualizza il file system, saranno visibili solo i file CSV.
+				\end{enumerate}
+			\item\textbf{Scenario Principale}: L’utente clicca il pulsante con etichetta “Carica Dati Addestramento”.
+		\end{itemize}
+
+		\subsection{UC1.2 - Selezione dati di addestramento }
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: L’utente deve aver cliccato il pulsante di caricamento dati di addestramento (\ref{UC1.1}).
+			\item\textbf{Postcondizioni}: L’utente ha selezionato il file dei dati di addestramento.
+			\item\textbf{Scenario Principale}: L’utente seleziona il file CSV contenente i dati di addestramento dal file system; è visibile solo il formato CSV.
+		\end{itemize}
+		
+		\subsection{UC1.3 Selezione dell’algoritmo di previsione}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}:L’utente deve aver selezionato i dati di addestramento (\ref{UC1.2}); 
+			\item\textbf{Postcondizioni}:L’utente ha scelto l’algoritmo di previsione selezionando il pulsante corrispondente;
+			\item\textbf{Scenario Principale}: L’utente clicca la Combo Box con etichetta "Seleziona Algoritmo" e sceglie l’algoritmo (SVM o RL);
+		\end{itemize}
+
+	\subsection{UC1.4 Conferma procedura addestramento}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}:
+				\begin{enumerate}
+					\item L’utente deve aver caricato i dati di addestramento(\ref{UC1.2});
+					\item  L’utente deve aver selezionato l’algoritmo di previsione. (\ref{UC1.3}); 
+				\end{enumerate}
+			\item\textbf{Postcondizioni}:
+				\begin{enumerate}
+					\item L’utente ha confermato la scelta dell’algoritmo e l’inserimento dei dati di addestramento;
+					\item L’utente ha salvato il file JSON.
+				\end{enumerate}
+			\item\textbf{Scenario Principale}: L’utente clicca il pulsante con etichetta “Conferma”;
+		\end{itemize}
+
+%%%%%%%%%%%%%%%
+
+
+	\subsection{UC2 - Caricamento del file JSON nel plugin}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: 
+				\begin{enumerate}
+					\item L’utente ha effettuato l’accesso a grafana;
+					\item L’utente si trova sul pannello del plugin “Predire in Grafana”;
+					\item L’utente dispone del file JSON contenente i predittori (UC 1). 
+				\end{enumerate}
+			\item\textbf{Postcondizioni}:
+				\begin{enumerate}
+					\item L’utente ha caricato il file JSON con predittori associati nel plug-in;
+					\item Viene letta la definizione del predittore dal file in formato JSON. 
+				\end{enumerate}
+			\item\textbf{Scenario Principale}:
+				\begin{enumerate}
+					\item (\ref{UC2.1}) L’utente seleziona sul pannello l’opzione di caricamento del file JSON; 
+					\item (\ref{UC2.2}) L’utente seleziona il file JSON contenente i predittori da locale;
+					\item (\ref{UC2.3}) Conferma caricamento.
+				\end{enumerate}
+			\item\textbf{Estensione}:
+					\item UC estende \label{UC2.3}: Viene visualizzato un messaggio d’errore nel caso in cui l’operazione di caricamento del file non sia andata a buon fine;
+			\item\textbf{Inclusione}: UC include \label{UC2.3}:  Viene visualizzato a schermo un messaggio di avvenuto successo della procedura.
+		\end{itemize}
+		
+		\subsection{UC 2.1 -  Selezione opzione di Caricamento file JSON}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: L’utente visualizza il pannello “Predire in Grafana” nella dashboard;
+			\item\textbf{Postcondizioni}: L’utente ha cliccato il pulsante di caricamento del file JSON e visualizza il pannello per la selezione del file;
+			\item\textbf{Scenario Principale}: L’utente clicca il pulsante con etichetta  “Carica JSON”.
+		\end{itemize}		
+
+		\subsection{UC 2.2 - Selezione del file JSON}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: L’utente ha cliccato il pulsante "Carica JSON";
+			\item\textbf{Postcondizioni}: L’utente ha selezionato il file JSON;
+			\item\textbf{Scenario Principale}: L’utente seleziona dalla finestra di selezione il file JSON da importare.
+		\end{itemize}
+
+		\subsection{UC 2.3 - Conferma di caricamento}
+		\begin{itemize}
+			\item\textbf{Attore Primario}: Utente;
+			\item\textbf{Precondizioni}: L’utente ha selezionato il file JSON da caricare;
+			\item\textbf{Postcondizioni}: L’utente ha caricato il file; 
+			\item\textbf{Scenario Principale}: L’utente clicca il pulsante etichettato con “Conferma” e il file viene caricato.
+		\end{itemize}
+		
+
+	
+	
+
