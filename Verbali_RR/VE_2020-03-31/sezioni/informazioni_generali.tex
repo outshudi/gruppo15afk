@@ -22,6 +22,16 @@ In particolare:
 	\item ruolo del database di Grafana InfluxDB;
 	\item corretto utilizzo dei predittori;
 	\item salvataggio dei file di addestramento;
-	\item etichettamento dei dati di addestramento per suddividerli in dati buoni e dati cattivi (true positive, false positive, true negative, false negative);
+	\item etichettamento dei dati di addestramento per suddividerli in dati "buoni" e dati "cattivi" (true positive, false positive, true negative, false negative);
 	\item come può essere applicato l'apprendimento continuo al machine learning.
+\end{itemize}
+Il proponente ha così fornito delucidazioni sottolineando che:
+\begin{itemize}
+\item \textbf{Support Vector Machine}: a seconda del segno del risultato ottenuto dall'applicazione della SVM, il predittore apparterrà ad una classe piuttosto che un altra;
+\item \textbf{Regressione Lineare}: l'applicazione della regressione lineare produce un risultato singolo;
+\item \textbf{File JSON}: questi file devono essere strutturati in modo tale da contenere una sezione comune tra i file JSON usati dall'applicativo, e altre due sezioni rispettivamente dedicate a RL e SVM;
+\item \textbf{InfluxDB}: essendo il database su cui si appoggia l'applicazione, deve essere utilizzato, tramite l'interfaccia di Grafana, per la lettura dei dati su cui fare previsioni, e per la storicizzazioni delle stesse;
+\item \textbf{Addestramento}: i dati di addestramento devono essere simulati e salvati in file di espensione .csv\glo , un plug in effettua l'addestramento, viene stabilito il predittore, e riaddestrato il sistema;
+\item \textbf{Predittore}: un flusso di dati può avere più di un predittore, ma un preditorre è associabile ad un solo flusso;
+\item \textbf{Auto apprendimento}: per questa operazione, nel caso venisse utilizzata la Regressione Lineare, è consigliato applicarla in modo continuo, invece nel caso dell'uso di SVM, quest'ultima deve essere completamente riaddestrata.
 \end{itemize}
