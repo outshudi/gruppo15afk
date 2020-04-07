@@ -9,13 +9,13 @@ Questo capitolo contiene le decisioni e le norme che sono state scelte per la sc
 Ogni documento segue le seguenti fasi di ciclo di vita:
 \begin{itemize}
 \item \textbf{Sviluppo}: creazione del documento, definizione della struttura e prima stesura di tutte le parti che lo compongono;
-\item \textbf{Verifica}: un documento entra in fase di verifica successivamente al suo completamento. \'E dovere del \textit{Responsabile} assegnare tale compito ad almeno un \textit{Verificatore}. Quest'ultimo deve applicare le procedure di verifica e segnalare eventuali modifiche da apportare al documento;
+\item \textbf{Verifica}: un documento entra in fase di verifica successivamente al suo completamento. È dovere del \textit{Responsabile} assegnare tale compito ad almeno un \textit{Verificatore}. Quest'ultimo deve applicare le procedure di verifica e segnalare eventuali modifiche da apportare al documento;
 \item \textbf{Approvazione}: il \textit{Responsabile} approva il documento, che sarà quindi ritenuto completo e pronto per il rilascio.
 \item \textbf{Rivisitazione e ampliamento}: con l'avanzare del progetto si prevede di espandere ciascun documento, aggiungendo nuove sezioni o migliorando quanto scritto in precedenza. Sarà compito del \textit{Responsabile} istanziare una nuova fase di sviluppo per provvedere alla realizzazione di questi aggiornamenti. Al termine di essa, vengono eseguite nuovamente le fasi di verifica ed approvazione del documento.
 \end{itemize}
 
 \subsection{Template}
-\'E stato creato un template \LaTeX{} per uniformare la struttura grafica e lo stile di formattazione dei documenti. Lo scopo dei template è quello di permettere, a colui che redige il documento, di adottare automaticamente le conformità previste dalle \textit{Norme di Progetto}. Nel caso quest'ultime cambiassero, essi permettono di agevolare la procedura di adeguamento alle nuove norme.
+È stato creato un template \LaTeX{} per uniformare la struttura grafica e lo stile di formattazione dei documenti. Lo scopo dei template è quello di permettere, a colui che redige il documento, di adottare automaticamente le conformità previste dalle \textit{Norme di Progetto}. Nel caso quest'ultime cambiassero, essi permettono di agevolare la procedura di adeguamento alle nuove norme.
 
 \subsection{Struttura dei documenti}
 Un file "nome\_file.tex" (in cui "nome\_file" verrà sostituito dal nome del documento) raccoglie, tramite comandi di input, le sezioni di cui è composto il documento. Tra i file in input ci sono:
@@ -67,7 +67,7 @@ La struttura delle pagine di contenuto è così definita: \begin{itemize}
 
 \label{par:verbali}
 \subsubsection{Verbali}
-I verbali vengono prodotti dal/i soggetto/i incaricato/i alla loro stesura in occasione di incontri tra i membri del team, con o senza la presenza di referenti esterni. \'E prevista la stesura di più verbali, uno per ogni incontro.
+I verbali vengono prodotti dal/i soggetto/i incaricato/i alla loro stesura in occasione di incontri tra i membri del team, con o senza la presenza di referenti esterni. È prevista la stesura di più verbali, uno per ogni incontro.
 La struttura è così definita: \begin{itemize}
 \item \textbf{Luogo}: luogo di svolgimento dell'incontro;
 \item \textbf{Data}: data dell'incontro, nel formato \texttt{YYYY-MM-DD};
@@ -340,7 +340,7 @@ Se nelle formule di calcolo delle metriche è presente il simbolo "\#", va intes
 	\begin{tabular}{ c | c | L{9.5cm} }
 		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}}& \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		Schedule Variance (SV)  & MP01 & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. \'E calcolata utilizzando la seguente formula: \newline
+		Schedule Variance (SV)  & MP01 & La Schedule Variance indica se una certa attività o processo è in anticipo, in pari, o in ritardo rispetto alla data di scadenza prevista. È calcolata utilizzando la seguente formula: \newline
 \[ SV = DCE-DCP\]
 dove: \begin{itemize}
 \item \textbf{DCE}: data conclusione effettiva;
@@ -367,7 +367,7 @@ Produttività (P) & MP03 & Rappresenta la produttività media delle risorse impi
 	\begin{tabular}{ c | c | L{10cm} }
 		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		Indice Gulpease (IG)  & MD01 & \'E un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
+		Indice Gulpease (IG)  & MD01 & È un indice di leggibilità di un testo tarato sulla lingua italiana e basato su due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere. La formula per il suo calcolo è: \newline
 \[ IG = 89 + \frac{300 \cdot (\#frasi) - 10 \cdot (\#lettere)}{\#parole} \] \newline
 Il risultato è un valore compreso nell'intervallo tra 0 e 100, dove il valore 100 indica la più alta leggibilità. Un indice inferiore a 80 indica documenti di difficile leggibilità per chi ha la licenza elementare, inferiore a 60 per chi ha la licenza media, inferiore a 40 per chi ha un diploma superiore.
 	\\
@@ -383,7 +383,7 @@ Questa sezione ha lo scopo di fornire delle metriche per garantire un buon livel
 	\begin{tabular}{ C{4.5cm} | c | L{9.5cm} }
 		\rowcolor{redafk}
 		\textcolor{white}{\textbf{Nome}} & \textcolor{white}{\textbf{Codice}} & \centerline{\textcolor{white}{\textbf{Descrizione}}} \\
-		\label{par:MS01}Linee di Codice (LOC) & MS01 & Rappresenta  le  dimensioni  del  codice di un metodo. \'E espresso in termini di numero di linee di codice, ed è utilizzato per dimensionare la produttività delle persone e da questa lo sforzo richiesto per sviluppare tale funzione. \\
+		\label{par:MS01}Linee di Codice (LOC) & MS01 & Rappresenta  le  dimensioni  del  codice di un metodo. È espresso in termini di numero di linee di codice, ed è utilizzato per dimensionare la produttività delle persone e da questa lo sforzo richiesto per sviluppare tale funzione. \\
 		Numero dei Metodi (NM)  & MS02 & Numero medio di metodi contenuti nelle classi di un oggetto. Un numero troppo alto di metodi può indicare la necessità di scomporre la classe. Un numero troppo basso deve far riflettere sull'effettiva utilità della classe in esame. 
 		\[ NM =\frac{\sum\#metodi}{\#classi}  \] \\
 		Numero di Parametri (NP) & MS03 & Numero di parametri passati a un metodo. Un eccessivo numero di parametri passati ad un metodo può
