@@ -1,1 +1,204 @@
- 
+\section{Preventivo di periodo}
+Per facilitare la lettura delle tabelle, vengono utilizzate le seguenti sigle per identificare i diversi ruoli e per ognuno di essi vengono indicati i relativi costi/h: \begin{itemize}
+\item \textbf{Re}: \textit{Responsabile} 30€/h;
+\item \textbf{Am}: \textit{Amministratore} 20€/h;
+\item \textbf{An}: \textit{Analista} 25€/h;
+\item \textbf{Pt}: \textit{Progettista} 22€/h;
+\item \textbf{Pm}: \textit{Programmatore} 15€/h;
+\item \textbf{Ve}: \textit{Verificatore} 15€/h.
+\end{itemize}
+Inoltre, se le ore ricoperte in un determinato ruolo fossero nulle, la cella presenterà il simbolo "-" per indicarne l'assenza.
+
+\subsection{Fase di Analisi}
+\subsubsection{Distribuzione oraria}
+In questa fase, i ruoli sono così suddivisi:
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Distribuzione delle ore nella fase di Analisi}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c | c | c | c | c | c }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Nominativo}} & \textcolor{white}{\textbf{Re}} & 
+\textcolor{white}{\textbf{Am}} & \textcolor{white}{\textbf{An}} &
+\textcolor{white}{\textbf{Pt}} & \textcolor{white}{\textbf{Pm}} &
+\textcolor{white}{\textbf{Ve}} & \textcolor{white}{\textbf{Totale}} \\
+Simone Federico Bergamin & 6 & 7 & 20 & - & - & 9 & 42 \\
+Alessandro Canesso & 8 & 6 & 16 & - & - & 12 & 42 \\
+Victor Dutca & 9 & - & 15 & - & - & 16 & 40 \\
+Fouad Farid	& 7 & 7 & 12 & 6 & - & 8 & 40 \\
+Simone Meneghin & - & 8 & 14 & 10 & - & 10 & 42 \\
+Olivier Utshudi & - & 8 & 13 & 8 & - & 13 & 42 \\
+Davide Zilio & 4 & 5 & 17 & - & - & 14 & 40 \\
+\rowcolor{lastrowcolor}
+\textbf{Ore totali ruolo} & \textbf{34} & \textbf{41} & \textbf{107} & \textbf{24} & \textbf{0} & \textbf{82} & \textbf{288} \\
+\end{tabular}
+\end{table}
+
+\pagebreak
+
+I dati ottenuti sono riassunti nel seguente istogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/tabella_fase_analisi.png}
+\caption{Istogramma della ripartizione delle ore per ruolo nella fase di Analisi}
+\end{figure}
+
+\subsubsection{Prospetto economico}
+In questa fase il costo per ogni ruolo è il seguente:
+
+%tabella costi
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Prospetto dei costi nella fase di Analisi}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c  }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Ruolo}} & \textcolor{white}{\textbf{Ore}} & 
+\textcolor{white}{\textbf{Costo}}  \\
+Responsabile & 34 & 1020€ \\
+Amministratore & 41 & 820€ \\
+Analista & 107 & 2675€ \\
+Progettista	& 24 & 528€ \\
+Programmatore & 0 & 0€  \\
+Verificatore & 82 & 1230€  \\
+\rowcolor{lastrowcolor}
+\textbf{Totale} & \textbf{288} & \textbf{6273€}  \\
+\end{tabular}
+\end{table}
+
+I dati ottenuti sono riassunti nel seguente areogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/torta_fase_analisi_prospetto_economico.png}
+\caption{Areogramma della ripartizione dei costi per ruolo nella fase di Analisi}
+\end{figure}
+
+%--------------------------------------------------
+
+\subsection{Fase di Progettazione architetturale}
+\subsubsection{Distribuzione oraria}
+In questa fase, i ruoli sono così suddivisi:
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Distribuzione delle ore nella fase di Progettazione architetturale}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c | c | c | c | c | c }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Nominativo}} & \textcolor{white}{\textbf{Re}} & 
+\textcolor{white}{\textbf{Am}} & \textcolor{white}{\textbf{An}} &
+\textcolor{white}{\textbf{Pt}} & \textcolor{white}{\textbf{Pm}} &
+\textcolor{white}{\textbf{Ve}} & \textcolor{white}{\textbf{Totale}} \\
+Simone Federico Bergamin & - & - & 10 & 7 & 5 & 8 & 30 \\
+Alessandro Canesso & - & 5 & - & 10 & 9 & 8 & 32 \\
+Victor Dutca & 3 & 6 & 4 & 10 & 7 & - & 30 \\
+Fouad Farid	& - & 5 & - & 14 & - & 11 & 30 \\
+Simone Meneghin & 6 & - & 9 & 10 & 7 & - & 32 \\
+Olivier Utshudi & - & 4 & - & 10 & 6 & 12 & 32 \\
+Davide Zilio & 3 & - & 13 & - & - & 14 & 30 \\
+\rowcolor{lastrowcolor}
+\textbf{Ore totali ruolo} & \textbf{12} & \textbf{20} & \textbf{36} & \textbf{61} & \textbf{34} & \textbf{53} & \textbf{216} \\
+\end{tabular}
+\end{table}
+
+I dati ottenuti sono riassunti nel seguente istogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/tabella_fase_prog_architetturale.png}
+\caption{Istogramma della ripartizione delle ore per ruolo nella fase di Progettazione architetturale}
+\end{figure}
+
+\subsubsection{Prospetto economico}
+In questa fase il costo per ogni ruolo è il seguente:
+
+%tabella costi
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Prospetto dei costi nella fase di Progettazione architetturale}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c  }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Ruolo}} & \textcolor{white}{\textbf{Ore}} & 
+\textcolor{white}{\textbf{Costo}}  \\
+Responsabile & 12 & 360€ \\
+Amministratore & 20 & 400€ \\
+Analista & 36 & 900€ \\
+Progettista	& 61 & 1342€ \\
+Programmatore & 34 & 510€  \\
+Verificatore & 53 & 795€  \\
+\rowcolor{lastrowcolor}
+\textbf{Totale} & \textbf{216} & \textbf{4307€}  \\
+\end{tabular}
+\end{table}
+
+I dati ottenuti sono riassunti nel seguente areogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/torta_fase_prog_architetturale.png}
+\caption{Areogramma della ripartizione dei costi per ruolo nella fase di Progettazione architetturale}
+\end{figure}
+
+%--------------------------------------------------
+
+\subsection{Fase di Progettazione di dettaglio e codifica}
+\subsubsection{Distribuzione oraria}
+In questa fase, i ruoli sono così suddivisi:
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Distribuzione delle ore nella fase di Progettazione di dettaglio e codifica}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c | c | c | c | c | c }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Nominativo}} & \textcolor{white}{\textbf{Re}} & 
+\textcolor{white}{\textbf{Am}} & \textcolor{white}{\textbf{An}} &
+\textcolor{white}{\textbf{Pt}} & \textcolor{white}{\textbf{Pm}} &
+\textcolor{white}{\textbf{Ve}} & \textcolor{white}{\textbf{Totale}} \\
+Simone Federico Bergamin & - & 6 & - & 12 & 18 & 12 & 48 \\
+Alessandro Canesso & 4 & 3 & - & 10 & 18 & 11 & 46 \\
+Victor Dutca & - & 8 & - & 10 & 20 & 10 & 48 \\
+Fouad Farid	& 4 & - & - & 12 & 20 & 12 & 48 \\
+Simone Meneghin & 2 & - & - & 12 & 22 & 14 & 50 \\
+Olivier Utshudi & 8 & - & - & 8 & 21 & 12 & 49 \\
+Davide Zilio & - & 6 & - & 10 & 20 & 12 & 48 \\
+\rowcolor{lastrowcolor}
+\textbf{Ore totali ruolo} & \textbf{18} & \textbf{23} & \textbf{0} & \textbf{74} & \textbf{139} & \textbf{83} & \textbf{337} \\
+\end{tabular}
+\end{table}
+
+I dati ottenuti sono riassunti nel seguente istogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/tabella_fase_prog_cod.png}
+\caption{Istogramma della ripartizione delle ore per ruolo nella fase di Progettazione di dettaglio e codifica}
+\end{figure}
+
+\subsubsection{Prospetto economico}
+In questa fase il costo per ogni ruolo è il seguente:
+
+%tabella costi
+\begin{table}[H]
+\centering\renewcommand{\arraystretch}{1.5}
+\caption{Prospetto dei costi nella fase di Progettazione di dettaglio e codifica}
+\vspace{0.2cm}
+\begin{tabular}{ c | c | c  }
+\rowcolor{redafk}
+\textcolor{white}{\textbf{Ruolo}} & \textcolor{white}{\textbf{Ore}} & 
+\textcolor{white}{\textbf{Costo}}  \\
+Responsabile & 18 & 540€ \\
+Amministratore & 23 & 460€ \\
+Analista & 0 & 0€ \\
+Progettista	& 74 & 1628€ \\
+Programmatore & 139 & 2085€  \\
+Verificatore & 83 & 1245€  \\
+\rowcolor{lastrowcolor}
+\textbf{Totale} & \textbf{337} & \textbf{5958€}  \\
+\end{tabular}
+\end{table}
+
+I dati ottenuti sono riassunti nel seguente areogramma:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{img/grafici/torta_fase_prog_cod.png}
+\caption{Areogramma della ripartizione dei costi per ruolo nella fase di Progettazione di dettaglio e codifica}
+\end{figure}
+
+%--------------------------------------------------
