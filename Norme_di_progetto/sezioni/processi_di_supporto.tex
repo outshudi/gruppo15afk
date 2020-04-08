@@ -457,7 +457,7 @@ Ci sono vari tipi di test, ognuno dei quali ha un diverso oggetto di verifica e 
 Test condotti per valutare la conformità di un componente o sistema con requisiti\glo funzionali. Ne fanno parte: \begin{itemize}
 \item \textbf{Test di unità\glo}: si eseguono su unità di software, e si concentrano sul loro funzionamento individuale;
 \item \textbf{Test di integrazione}: verificano se sono rispettati i contratti di interfaccia tra più moduli o sub-system (interni o esterni);
-\item \textbf{Test di accettazione UAT}: gli UAT (User Acceptance Testing) si occupano di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento di questo test garantisce che il software sia pronto per essere rilasciato.
+\item \textbf{Test di accettazione}: gli UAT (User Acceptance Testing) si occupano di verificare il prodotto e, in particolare, il soddisfacimento del cliente. Il superamento di questo test garantisce che il software sia pronto per essere rilasciato.
 \end{itemize}
 
 \paragraph*{Test di regressione} \mbox{} \\ \mbox{} \\
@@ -466,6 +466,32 @@ Il test di regressione va eseguito ogni volta che viene modificata un’implemen
 \paragraph*{Test di sistema} \mbox{} \\ \mbox{} \\
 Verificano il comportamento dell'intero sistema.\\
 Lo scopo principale di questi test è la verifica del sistema rispetto alle specifiche tecniche definite nell'\textit{Analisi dei Requisiti}.
+
+\subparagraph{Codifica dei test} \mbox{} \\ \mbox{} \\
+La codifica dei test è la seguente: \\
+\centerline{\textbf{TX[Tipo\_Requisito][Importanza][CodiceUC]}}
+dove: \begin{itemize}
+\item \textbf{X}: indica il tipo di test. Può assumere i seguenti valori: \begin{itemize}
+\item \textbf{U}: indica un test di unità;
+\item \textbf{I}: indica un test di integrazione;
+\item \textbf{A}: indica un test di accettazione;
+\item \textbf{R}: indica un test di regressione;
+\item \textbf{S}: indica un test di sistema.
+\end{itemize} 
+\item \textbf{Tipo\_Requisito}: indica il tipo del requisito. Esso può essere: \begin{itemize}
+\item \textbf{O}: obbligatorio;
+\item \textbf{D}: desiderabile;
+\item \textbf{F}: facoltativo.
+\end{itemize}
+\item \textbf{Importanza}: indica l'importanza del requisito. Viene indicata con: \begin{itemize}
+\item \textbf{F}: per indicare un requisito funzionale;
+\item \textbf{V}: per indicare un requisito di vincolo;
+\item \textbf{Q}: per indicare un requisito di qualità;
+\item \textbf{P}: per indicare un requisito prestazionale.
+\end{itemize}
+\item \textbf{CodiceUC}: rappresenta il codice identificativo del caso d'uso di riferimento del test.
+\end{itemize}
+
 
 \subsubsection{Validazione}
 Questo processo avviene tramite test pianificati dal \textit{Progettista} ed in seguito eseguiti dal \textit{Verificatore}.
