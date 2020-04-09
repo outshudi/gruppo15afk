@@ -1,43 +1,37 @@
 \section{Casi d'uso}
 
 	\subsection{Introduzione}
-Il numero limitato dei casi identificati è dovuto alla natura del prodotto, in quanto si tratta di un plug-in e quindi di un’estensione di una piattaforma già esistente che viene integrato da un tool di addestramento esterno.
+Il numero limitato dei casi d'uso\glo identificati è dovuto alla natura del prodotto, in quanto si tratta di un plug-in e quindi di un’estensione di una piattaforma già esistente che viene integrato da un tool di addestramento esterno.
 Per la piattaforma in questione non è fornita alcuna documentazione in quanto essa è già disponibile al sito web del distributore della piattaforma: \emph{Grafana Labs} (\href{https://grafana.com/docs/grafana/latest/}{Grafana Documentation}). 
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.80]{../Analisi_dei_requisiti/img/Diagrammi_UML/tool_e_plug-in.png}
-		\caption{Tool di addestramento e plug-in in generale}
-	\end{figure}
 
 	\subsection{Struttura dei casi d'uso}
 Viene riportata di seguito la classificazione dei casi d’uso. Verranno descritti nel documento rispettando la struttura esposta di seguito.
 	
 		\subsubsection{Struttura dei casi d'uso}
 		\begin{itemize}
-			\item Titolo; 
- 			\item Attore Primario; 
-			\item Precondizioni; 
- 			\item Postcondizioni; 
- 			\item Scenario principale; 
- 			\item Estensioni.
-			\item Inclusioni
+			\item titolo; 
+ 			\item attore primario; 
+			\item precondizioni; 
+ 			\item postcondizioni; 
+ 			\item scenario principale; 
+ 			\item estensioni;
+			\item inclusioni.
  		\end{itemize}
-Verrà utilizzato il linguaggio di modellazione UML 2.0. 
-Ogni requisito può essere inserito in vari UC, che si differenziano ciascuno per una diversa profondità dei dettagli da cui possono distinguersi ulteriori requisiti. 
+Verrà utilizzato il linguaggio di modellazione UML 2.0\glo. 
+Ogni requisito può essere inserito in vari UC\glo, che si differenziano ciascuno per una diversa profondità dei dettagli da cui possono distinguersi ulteriori requisiti. 
 
 		\subsubsection{Classificazione dei casi d'uso}
 Identificare i casi d’uso in modo univoco aiuta la tracciabilità.  I casi d’uso sono classificati nel seguente modo:  UC[ID].[\emph{ID}] è il codice univoco che rappresenta il requisito del caso d’uso. Se lo UC è collegato per profondità di dettaglio ad un altro UC, l’ID verrà rappresentato in maniera gerarchica (esempio: Se uno UC rappresenta un livello di dettaglio maggiore con ID x, il suo ID sarà x.y, dove y indica l’annidamento raggiunto). Verranno presentati prima i casi d'uso principali (da \hyperref[par:UC1]{UC1} a \hyperref[par:UC8]{UC8}), seguiti da quelli realativi ad estensioni (da \hyperref[par:UC9]{UC9} a \hyperref[par:UC15]{UC15}) e infine verranno presentati i casi d'uso relativi alle inclusioni (da \hyperref[par:UC16]{UC16} a \hyperref[par:UC24]{UC24}).
 
 	\subsection{Attori}
 Il sistema di autenticazione e registrazione dell’utente viene gestito per intero dal sistema Grafana, in quanto il prodotto finale non disporrà di una funzionalità di autenticazione/registrazione interna.
-Il numero limitato di differenti  attori che si approcciano al prodotto in analisi è dovuto principalmente  al fatto che, essendo il prodotto \emph{“Predire in Grafana”} un plug-in del sistema indipendente di Grafana, un esiguo numero di utenti hanno effettivamente la possibilità di approcciarsi al prodotto finale.
+Il numero limitato di differenti attori che si approcciano al prodotto in analisi è dovuto principalmente al fatto che, essendo il prodotto \emph{“Predire in Grafana”} un plug-in del sistema indipendente di Grafana, un esiguo numero di utenti hanno effettivamente la possibilità di approcciarsi al prodotto finale.
 
 	\subsubsection{Attori Primari}
 Essendo l’attore primario un ruolo specifico assunto da un utente che interagisce col sistema nell’ambito di un’unità di funzionamento (caso d’uso), la tipologia di tale posizione può essere suddivisa in due categorie:
 	\begin{itemize}
-		\item\textbf{Utente Addestratore}:  è l’utente ideale per l’uso del tool di addestramento in quanto dispone di nozioni di Machine Learning\glo;
-		\item\textbf{Utente Monitoratore}: è un utente che ha un’ampia conoscenza sul monitoraggio dei dati ed è in grado di interpretare la previsione visualizzata sulla dashboard.
+		\item\textbf{Utente Addestratore}: E' l’utente ideale per l’uso del tool di addestramento in quanto dispone di nozioni di Machine Learning;
+		\item\textbf{Utente Monitoratore}: E' un utente che ha un’ampia conoscenza sul monitoraggio dei dati ed è in grado di interpretare la previsione visualizzata sulla dashboard.
 		
  	\end{itemize}
 
@@ -45,6 +39,12 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 	\begin{itemize}
 		\item\textbf{Piattaforma Grafana}: E' un sistema di monitoraggio di stream\glo di dati, che ospiterà il plug-in prodotto. Consente agli utenti registrati di lanciare alert e realizzare grafici modellati sui dati forniti in ingresso al plug-in.
  	\end{itemize}
+
+\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.80]{../Analisi_dei_requisiti/img/Diagrammi_UML/tool_e_plug-in.png}
+		\caption{Tool di addestramento e plug-in in generale}
+	\end{figure}
 
 % - Casi d'uso: Principali - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\label{par:UC1}
@@ -60,7 +60,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore Primario}: Utente Addestratore;
 			\item\textbf{Precondizioni}: 
 				\begin{enumerate}
-					\item l’utente deve possedere dei dati di addestramento in un file formato CSV;
+					\item l’utente deve possedere dei dati di addestramento\glo in un file formato CSV\glo;
 					\item l’utente si trova sul tool di addestramento.
 				\end{enumerate}
 			\item\textbf{Postcondizioni}:
@@ -72,7 +72,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 				\begin{enumerate}
 					\item (\hyperref[par:UC1.1]{UC1.1}) l’utente seleziona il pulsante “Carica Dati di Addestramento”;
 					\item (\hyperref[par:UC1.2]{UC1.2}) l’utente seleziona i dati di addestramento da caricare;
-					\item (\hyperref[par:UC1.3]{UC1.3}) l’utente selezione l’algoritmo di previsione scelto attraverso la Combo Box “Scegli Algoritmo”; 
+					\item (\hyperref[par:UC1.3]{UC1.3}) l’utente seleziona l’algoritmo di previsione scelto attraverso la Combo Box\glo “Scegli Algoritmo”; 
 					\item (\hyperref[par:UC1.4]{UC1.4}) conferma delle operazioni; 
 					\item (\hyperref[par:UC1.5]{UC1.5}) l’utente riceve in output il file JSON contenente i predittori per SVM/RL e decide dove salvarlo (localmente).  
 				\end{enumerate}
@@ -92,7 +92,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Postcondizioni}:
 				\begin{enumerate}
 					\item l’utente ha cliccato il pulsante di caricamento dati;
-					\item viene aperto la finestra che visualizza il file system; saranno visibili solo i file CSV.
+					\item viene aperta la finestra che visualizza il file system\glo; saranno visibili solo i file CSV.
 				\end{enumerate}
 			\item\textbf{Scenario Principale}: l’utente clicca il pulsante con etichetta “Carica Dati Addestramento”.
 		\end{itemize}
@@ -124,11 +124,8 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente deve aver caricato i dati di addestramento (\hyperref[par:UC1.2]{UC1.2});
 					\item  l’utente deve aver selezionato l’algoritmo di previsione (\hyperref[par:UC1.3]{UC1.3}).
 				\end{enumerate}
-			\item\textbf{Postcondizioni}:
-				\begin{enumerate}
-					\item l’utente ha confermato la scelta dell’algoritmo e l’inserimento dei dati di addestramento;
-					\item l'utente ha salvato il file JSON.
-				\end{enumerate}
+			\item\textbf{Postcondizioni}: L’utente ha confermato la scelta dell’algoritmo e l’inserimento dei dati di addestramento;
+					
 			\item\textbf{Scenario Principale}: L’utente clicca il pulsante con etichetta “Conferma”;
 			\item\textbf{Estensione}: \hyperref[par:UC9]{UC9}: viene visualizzato un messaggio d’errore se il file di addestramento è incompatibile con l’algoritmo scelto. 	
 		\end{itemize}
@@ -233,7 +230,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Postcondizioni}: L’utente ha collegato correttamente i predittori ad un flusso dati, definendone le soglie per i rispettivi stati di ogni nodo e visualizza i collegamenti in un pannello dedicato.;
 			\item\textbf{Scenario Principale}:
 				\begin{enumerate}
-					\item (\hyperref[par:UC3.1]{UC3.1}) l’utente seleziona il database che verrà scelto tra quelli disponibili memorizzati in Grafana;
+					\item (\hyperref[par:UC3.1]{UC3.1}) l’utente seleziona il database\glo che verrà scelto tra quelli disponibili memorizzati in Grafana;
 					\item (\hyperref[par:UC3.2]{UC3.2}) l’utente seleziona il flusso dati contenuto in una tabella del DB;
 					\item (\hyperref[par:UC3.3]{UC3.3}) l'utente selezione uno o più predittori scegliendoli tra quelli disponibili in una lista che verrà visualizzata una volta caricato il file JSON; 
 					\item (\hyperref[par:UC3.4]{UC3.4}) l'utente seleziona il nodo del flusso dati da associare al predittore;
@@ -265,7 +262,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 		\subsubsection{UC3.2 - Selezione del Flusso Dati}
 		\begin{itemize}
 			\item\textbf{Attore Primario}: Utente;
-			\item\textbf{Precondizioni}: L’utente ha selezionato il DB presente in Grafana (\hyperref[par:UC3.1]{UC3.1}) da cui selezionare il flusso dati di interesse e visualizza la lista delle tabelle disponibili;
+			\item\textbf{Precondizioni}: L’utente ha selezionato il DB\glo presente in Grafana (\hyperref[par:UC3.1]{UC3.1}) da cui selezionare il flusso dati di interesse e visualizza la lista delle tabelle disponibili;
 			\item\textbf{Postcondizioni}: L’utente ha selezionato la tabella e dispone di un flusso dati su cui fare il collegamento;
 			\item\textbf{Scenario Principale}: L’utente seleziona la tabella che vuole utilizzare per effettuare il collegamento ai predittori scelti.
 		\end{itemize}
@@ -399,11 +396,11 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 	\item\textbf{Postcondizioni}: 
 				\begin{enumerate}
 					\item è stata applicata la previsione al flusso di dati preso in esame ed è stato avviato il monitoraggio; 
-					\item è stato deciso se inviare o meno i nuovi dati a Grafanaottenuti dalla previsione
+					\item è stato deciso se inviare o meno i nuovi dati a Grafana ottenuti dalla previsione
 				\end{enumerate}
 			\item\textbf{Scenario Principale}: 
 				\begin{enumerate} 
-					\item (\hyperref[par:UC6.1]{UC6.1}) l'utente inserisce la politica temporale da applicare;
+					\item (\hyperref[par:UC6.1]{UC6.1}) l'utente inserisce la politica temporale\glo da applicare;
 					\item (\hyperref[par:UC6.2]{UC6.2}) l'utente clicca il pulsante di avvio monitoraggio; 
 					\item (\hyperref[par:UC6.3]{UC6.3}) l'utente decide se salvare i dati di previsione cliccando il pulsante di salvataggio.
 				\end{enumerate}
@@ -506,7 +503,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 		\begin{itemize}
 			\item\textbf{Attore Primario}: Utente Monitoratore;
 			\item\textbf{Precondizioni}: L’utente ha avviato correttamente il monitoraggio del flusso dati (\hyperref[par:UC6.2]{UC6.2}) con relativi predittori collegati;
-			\item\textbf{Postcondizioni}:Il sistema mantiene aggiornate e visualizzabili attraverso l’uso delle dashboard le misurazioni e le previsioni dei predittori associati da parte dell’utente; 
+			\item\textbf{Postcondizioni}: Il sistema mantiene aggiornate e visualizzabili attraverso l’uso delle dashboard le misurazioni e le previsioni dei predittori associati da parte dell’utente; 
 			\item\textbf{Scenario Principale}: L’utente visualizza l’andamento dei dati misurati rispetto a quelli previsti. Il sistema si aggiorna costantemente grazie ai dati provenienti dal database, effettuando l’operazione di calcolo delle previsioni sul flusso dati associato ai predittori (\hyperref[par:UC6]{UC6}). Tale operazione di calcolo di previsione viene eseguito in base alla politica temporale stabilita in \hyperref[par:UC6.1]{UC6.1}.		
 			\item\textbf{Inclusioni}: \hyperref[par:UC24]{UC24}: ogni volta che una soglia critica viene attivata dai dati di previsioni viene visualizzato un messaggio di alert. 
 		\end{itemize}

@@ -1,7 +1,7 @@
 \documentclass[a4paper, oneside, openany, dvipsnames, table, 12pt]{article}
 \usepackage{../Template/AFKstyle}
-\usepackage{mathtools}
 \usepackage{hyperref}
+\usepackage{amsmath}
 \input{sezioni/copertina.tex}
 \makeindex
 
@@ -10,19 +10,30 @@
 
 \newpage
 \input{sezioni/RegistroModifiche.tex}
-\newpage
+
+%Didascalia tabelle/immagini (prendono come riferimento la subsection)
+\counterwithin{table}{subsection}
+\counterwithin{figure}{subsection}
 \newpage
 
+%indice, indice figure e indice tabelle
 \tableofcontents
 \newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
 
-\newpage
 \input{sezioni/Introduzione.tex}
-\newpage
+\pagebreak
+
 \input{sezioni/DescrizioneGenerale.tex}
-\newpage
+\pagebreak
+
 \input{sezioni/casi_d'uso.tex}
-\newpage
+\pagebreak
+
 \input{sezioni/requisiti.tex}
+\pagebreak
 
 \end{document}
