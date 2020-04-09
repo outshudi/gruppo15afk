@@ -76,20 +76,19 @@
             <depend id="120" type="2" difference="0" hardness="Strong"/>
             <task id="25" name="Raccolta delle informazioni" color="#8cb6ce" meeting="false" start="2020-03-26" duration="7" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
                 <depend id="27" type="2" difference="0" hardness="Strong"/>
-                <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="123" name="Riunione con proponente" color="#ff3333" meeting="true" start="2020-03-31" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true"/>
             <task id="147" name="Descrizione generale" color="#8cb6ce" meeting="false" start="2020-04-02" duration="1" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true"/>
             <task id="27" name="Casi d'uso" color="#8cb6ce" meeting="false" start="2020-04-02" duration="5" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
                 <depend id="29" type="2" difference="0" hardness="Strong"/>
                 <depend id="48" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="145" name="Appofondimento con proponente" color="#ff3333" meeting="true" start="2020-04-03" duration="0" complete="0" thirdDate="2020-03-10" thirdDate-constraint="0" expand="true"/>
-            <task id="28" name="Requisiti" color="#8cb6ce" meeting="false" start="2020-04-02" duration="5" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
+            <task id="28" name="Requisiti" color="#8cb6ce" meeting="false" start="2020-04-07" duration="3" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
                 <depend id="29" type="2" difference="0" hardness="Strong"/>
-                <depend id="48" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="29" name="Tracciamento" color="#8cb6ce" meeting="false" start="2020-04-07" duration="4" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
+            <task id="29" name="Tracciamento" color="#8cb6ce" meeting="false" start="2020-04-10" duration="1" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
                 <depend id="30" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="30" name="Verifica" color="#00ff00" meeting="false" start="2020-04-11" duration="2" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true"/>
@@ -102,7 +101,7 @@
             <task id="47" name="Qualità di prodotto" color="#8cb6ce" meeting="false" start="2020-03-30" duration="3" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
                 <depend id="50" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="48" name="Specifica dei test" color="#8cb6ce" meeting="false" start="2020-04-07" duration="3" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
+            <task id="48" name="Specifica dei test" color="#8cb6ce" meeting="false" start="2020-04-07" duration="4" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
                 <depend id="50" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="49" name="Resoconto dell'attività di verifica" color="#8cb6ce" meeting="false" start="2020-04-10" duration="1" complete="0" thirdDate="2020-03-11" thirdDate-constraint="0" expand="true">
