@@ -202,6 +202,50 @@
 		\end{itemize}
 		\paragraph{Ricorsione} \mbox{} \\ \mbox{} \\
 		La ricorsione deve essere il più possibile evitata, perché è causa di un aumento di complessità della soluzione ad un problema. Per questo è preferibile adottare soluzioni iterative.
+	\subsubsection{Metriche di qualità}
+			Analisi dei Requisiti \mbox{} \\ \mbox{} \\
+			Durante il periodo di analisi vengono identificati i requsiti del progetto, e definiti i relativi casi d'uso. 
+			Gli obiettivi sono:
+			\begin{itemize}
+			\item  formulare la definizione di casi d’uso e requisiti;
+			\item ottenere la loro approvazione;
+			\item tracciare il loro cambiamento nel tempo.
+			\end{itemize}
+			La strategia prevede:
+			\begin{itemize}
+			\item considerare lo scopo del progetto e le richieste degli stakeholder;
+			\item esprimere ciò in forma di requisiti, classificati in obbligatori, desiderabili e opzionali;
+			\item valutare il corpo dei requisiti e negoziare cambiamenti se necessario;
+			\item ottenere la loro approvazione da parte del proponente.
+			La metrica usata è la percentuale di requisiti obbligatori soddisfatti (PROS) e viene
+calcolata con la seguente formula: 
+
+		\[ PROS = \frac{requisiti\_obbligatori\_soddisfatti}{requisiti\_obbligatori\_totali} \]
+	
+			\end{itemize}
+			\paragraph{Progettazione} \mbox{} \\ \mbox{} \\
+			La progettazione consiste nell'identificare la struttura complessiva del sistema, per poi suddividerla nei moduli e unità architetturali che la compongono. In questo modo è più semplice per i programmatori che implementeranno il sistema, comprendere e rispettare i requisiti funzionali.
+			A questo scopo si deve:
+			\begin{itemize}
+			\item tradurre i requisiti in unità di codice, i moduli;
+			\item assegnare ai programmatori singoli compiti;
+			\item fornire un prototipo di sistema da migliorare ma funzionante;
+			\item garantire il tracciamento dei requisiti per componente;
+			\end{itemize}
+			Strategie adottate:
+			\begin{itemize}			
+			\item suddivisione della macro-architettura;
+			\item implementare i moduli;
+			\end{itemize}
+			\paragraph{Codifica} \mbox{} \\ \mbox{} \\
+			Questo paragrafo elenca le metriche a cui il prodotto software viene sottoposto per misurarne la qualità.
+			I valori riportati sono una dichiarazione di intenti. Nulla vieta che in corso d'opera possano avvenire dele revisioni.
+			\begin{itemize}
+			\item \textbf{Linee di Codice}: È la metrica che registra la dimensione di tutto il codice sorgente di un metodo;
+			\item \textbf{Numero dei metodi}: questa metrica conta il numero di metodi presenti un oggetto. Questo strumento permette di determinare la necessità di modularizzare un oggetto;
+			\item \textbf{Numero dei paramteri}: un numero elevato di parametri di un metodo, comporta ad un alto grado di coplessità del problema;
+			\item \textbf{Commenti per Linee di Codice}: questa metrica calcola il rapporto tra le linee di commento e quelle di codice effettivo. Quindi permette di stabilire il livello di comprensibilità del codice sorgente da parte del programmatore, visto che un codice commentato risulta più comprensibile di quello sprovvisto di commento o con note superficiali;
+			\end{itemize}
 	\subsection{Strumenti}
 	\subsubsection{ESLint}
 	È un plugin\glo utilizzato per effettuare analisi statica del codice, e rilevare problematiche nei pattern codificati in linguaggio JavaScript\glo. \\
