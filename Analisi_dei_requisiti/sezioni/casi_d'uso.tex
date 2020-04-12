@@ -99,7 +99,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item viene aperta la finestra che visualizza il file system\glo; 
 					\item saranno visibili solo i file CSV.
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: l’utente clicca il pulsante con etichetta “Carica Dati Addestramento”.
+			\item\textbf{Scenario principale}: l’utente clicca il pulsante con etichetta “Carica Dati Addestramento”.
 		\end{itemize}
 		
 		\label{par:UC1.2}
@@ -108,7 +108,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente addestratore;
 			\item\textbf{Precondizioni}: l’utente deve aver cliccato il pulsante di caricamento dati di addestramento (\hyperref[par:UC1.1]{UC1.1});
 			\item\textbf{Postcondizioni}: l’utente ha selezionato il file dei dati di addestramento;
-			\item\textbf{Scenario Principale}: L’utente seleziona il file CSV contenente i dati di addestramento dal file system ed è visibile solo il formato CSV.
+			\item\textbf{Scenario principale}: L’utente seleziona il file CSV contenente i dati di addestramento dal file system ed è visibile solo il formato CSV.
 		\end{itemize}
 		
 		\label{par:UC1.3}
@@ -117,7 +117,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente addestratore;
 			\item\textbf{Precondizioni}: l’utente deve aver selezionato i dati di addestramento (\hyperref[par:UC1.2]{UC1.2}); 
 			\item\textbf{Postcondizioni}: l’utente ha scelto l’algoritmo di previsione selezionando il pulsante corrispondente;
-			\item\textbf{Scenario Principale}: l’utente clicca la Combo Box con etichetta "Seleziona Algoritmo" e sceglie l’algoritmo (SVM o RL).
+			\item\textbf{Scenario principale}: l’utente clicca la Combo Box con etichetta "Seleziona Algoritmo" e sceglie l’algoritmo (SVM o RL).
 		\end{itemize}
 	
 	\label{par:UC1.4}
@@ -131,7 +131,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 				\end{enumerate}
 			\item\textbf{Postcondizioni}: l’utente ha confermato la scelta dell’algoritmo e l’inserimento dei dati di addestramento;
 					
-			\item\textbf{Scenario Principale}: l’utente clicca il pulsante con etichetta “Conferma”;
+			\item\textbf{Scenario principale}: l’utente clicca il pulsante con etichetta “Conferma”;
 			\item\textbf{Estensione}: \hyperref[par:UC9]{UC9}: viene visualizzato un messaggio d’errore se il file di addestramento è incompatibile con l’algoritmo scelto. 	
 		\end{itemize}
 
@@ -189,7 +189,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l’utente visualizza il pannello “Predire in Grafana” nella dashboard;
 			\item\textbf{Postcondizioni}: l’utente ha cliccato il pulsante di caricamento del file JSON e visualizza la finestra per la selezione del file;
-			\item\textbf{Scenario Principale}: l’utente clicca il pulsante con etichetta  “Carica JSON”;
+			\item\textbf{Scenario principale}: l’utente clicca il pulsante con etichetta  “Carica JSON”;
 			\item\textbf{Estensioni}: \hyperref[par:UC10]{UC10}: viene visualizzato un messaggio di allert nel caso in cui sia già presente un file JSON caricato nel plug-in "Predire in Grafana".
 		\end{itemize}		
 		
@@ -208,7 +208,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l’utente ha selezionato il file JSON da caricare;
 			\item\textbf{Postcondizioni}: l’utente ha caricato il file nel plug-in; 
-			\item\textbf{Scenario Principale}: l’utente clicca il pulsante etichettato con “Conferma” e il file viene caricato.
+			\item\textbf{Scenario principale}: l’utente clicca il pulsante etichettato con “Conferma” e il file viene caricato.
 			\item\textbf{Estensione}: \hyperref[par:UC11]{UC11}: viene visualizzato un messaggio d’errore nel caso in cui l’operazione di caricamento del file non sia andata a buon fine;				
 			\item\textbf{Inclusione}: \hyperref[par:UC17]{UC17}: viene visualizzato a schermo un messaggio di notifica di avvenuto successo della procedura di caricamenteo JSON.	
 		\end{itemize}
@@ -233,7 +233,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente deve aver configurato la connessione al server tramite Grafana.	
 				\end{enumerate}
 			\item\textbf{Postcondizioni}: L’utente ha collegato correttamente i predittori ad un flusso dati, definendone le soglie per i rispettivi stati di ogni nodo e visualizza i collegamenti in un pannello dedicato;
-			\item\textbf{Scenario Principale}:
+			\item\textbf{Scenario principale}:
 				\begin{enumerate}
 					\item (\hyperref[par:UC3.1]{UC3.1}) l’utente seleziona il database\glo che verrà scelto tra quelli disponibili memorizzati in Grafana;
 					\item (\hyperref[par:UC3.2]{UC3.2}) l’utente seleziona il flusso dati contenuto in una tabella del DB;
@@ -260,7 +260,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l’utente ha configurato correttamente la connessione al server tramite Grafana e visualizza la lista di Database disponibili;
 			\item\textbf{Postcondizioni}: è stato selezionato il database contenente il flusso dati desiderato;
-			\item\textbf{Scenario Principale}: l’utente seleziona il database da usare come sorgente dati tra quelli disponibili;
+			\item\textbf{Scenario principale}: l’utente seleziona il database da usare come sorgente dati tra quelli disponibili;
 		\end{itemize}
 		
 		\label{par:UC3.2}
@@ -269,7 +269,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l’utente ha selezionato il DB\glo presente in Grafana (\hyperref[par:UC3.1]{UC3.1}) da cui selezionare il flusso dati di interesse e visualizza la lista delle tabelle disponibili;
 			\item\textbf{Postcondizioni}: l’utente ha selezionato la tabella e dispone di un flusso dati su cui fare il collegamento;
-			\item\textbf{Scenario Principale}: l’utente seleziona la tabella che vuole utilizzare per effettuare il collegamento ai predittori scelti.
+			\item\textbf{Scenario principale}: l’utente seleziona la tabella che vuole utilizzare per effettuare il collegamento ai predittori scelti.
 		\end{itemize}
 		
 		\label{par:UC3.3}
@@ -282,7 +282,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item è stato letto il file JSON con i predittori e l'utente visualizza una lista con i predittori disponibili.
 				\end{enumerate}
 			\item\textbf{Postcondizioni}: uno o più predittori sono stati selezionati dalla lista disponibile;
-			\item\textbf{Scenario Principale}: l’utente seleziona il predittore che intende associare ad un aspetto del flusso.
+			\item\textbf{Scenario principale}: l’utente seleziona il predittore che intende associare ad un aspetto del flusso.
 		\end{itemize}
 	
 	\label{par:UC3.4}
@@ -295,7 +295,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente visualizza la lista di nodi del flusso di dati a cui poter associare il/i predittore/i selezionato/i.
 				\end{enumerate}
 			\item\textbf{Postcondizioni}: l'utente ha selezionato il nodo dal flusso dati;
-			\item\textbf{Scenario Principale}: l’utente seleziona l’aspetto interessato dal flusso di dati al quale può essere agganciato il predittore selezionato (o i predittori).
+			\item\textbf{Scenario principale}: l’utente seleziona l’aspetto interessato dal flusso di dati al quale può essere agganciato il predittore selezionato (o i predittori).
 		\end{itemize}
 
 	\label{par:UC3.5}
@@ -304,7 +304,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l'utente ha selezionato almeno un predittore che vuole collegare al flusso dati (\hyperref[par:UC3.3]{UC3.3});
 			\item\textbf{Postcondizioni}: l’utente ha impostato la soglia di monitoraggio sul preditore selezionato;
-			\item\textbf{Scenario Principale}: l’utente dispone di almeno un predittore e aggiunge una soglia da associare ed è possibile impostare più di una soglia; 
+			\item\textbf{Scenario principale}: l’utente dispone di almeno un predittore e aggiunge una soglia da associare ed è possibile impostare più di una soglia; 
 			\item\textbf{Estensioni}: \hyperref[par:UC12]{UC12}: viene visualizzato un messaggio di errore "Soglia Non Valida" nel caso venga inserito un valore non consentito.
 		\end{itemize}
 
@@ -318,7 +318,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente ha confermato il collegamento e visualizza la lista dei collegamenti;
 					\item l'utente ha la possibilità di effettuare un altro collegamento tornando a \hyperref[par:UC3.1]{UC3.1}.
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: L’utente clicca il pulsante eticchettato con "Conferma Collegamento";
+			\item\textbf{Scenario principale}: L’utente clicca il pulsante eticchettato con "Conferma Collegamento";
 			\item\textbf{Estensioni}: \hyperref[par:UC13]{UC13} estende \hyperref[par:UC3.6]{UC3.6}: viene visualizzato un messaggio d’errore nel caso il collegamento non sia stato possibile;
 			\item\textbf{Inclusione}: 
 				\begin{enumerate}
@@ -352,7 +352,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente ha scollegato il predittore dal flusso dati precedentemente associato; 
 					\item dalla lista dei collegamenti non viene più visualizzato il collegamento che è stato scollegato.
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: l'utente clicca il pulsante con etichetta "Scollega Predittore".
+			\item\textbf{Scenario principale}: l'utente clicca il pulsante con etichetta "Scollega Predittore".
 			\item\textbf{Inclusioni}: \hyperref[par:UC20]{UC20}: viene visualizzato un messaggio di alert "Procedere con lo  Scollegamento?" che interroga l'utente sull'effettiva conferma della procedura attuata. 
 		\end{itemize}	
 
@@ -372,7 +372,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente ha cliccato il tasto di modifica e viene indirizzato al pannello di collegamento del predittore al flusso dati a partire dalla sezione dedicata alla "Selezione del Predittore" (\hyperref[par:UC3.3]{UC3.3}) dove può apportare le modifiche al collegamento scelto; 
 					\item la precedente selezione verrà evidenziata con un marcatore e sarà possibile la modifica.
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: 
+			\item\textbf{Scenario principale}: 
 				\begin{enumerate} 
 					\item l'utente clicca il pulsante "Modifica collegamento" e viene indirizzato alla sezione di "Selezione del Predittore" (\hyperref[par:UC3.3]{UC3.3});  
 					\item vengono abilitate le modifiche e marcate le selezioni precedentemente effettuate. L'utente decide come modificare il collegamento reiterando le procedure di selezione del predittore (\hyperref[par:UC3.3]{UC3.3}), nodo del flusso dati (\hyperref[par:UC3.4]{UC3.4}), impostazione soglie (\hyperref[par:UC3.5]{UC3.5}) e conferma (\hyperref[par:UC3.6]{UC3.6}). 
@@ -403,7 +403,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item è stata applicata la previsione al flusso di dati preso in esame ed è stato avviato il monitoraggio; 
 					\item è stato deciso se inviare o meno i nuovi dati a Grafana ottenuti dalla previsione
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: 
+			\item\textbf{Scenario principale}: 
 				\begin{enumerate} 
 					\item (\hyperref[par:UC6.1]{UC6.1}) l'utente inserisce la politica temporale\glo da applicare;
 					\item (\hyperref[par:UC6.2]{UC6.2}) l'utente clicca il pulsante di avvio monitoraggio; 
@@ -429,7 +429,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 			\item\textbf{Attore primario}: utente monitoratore;
 			\item\textbf{Precondizioni}: l'utente si trova nella sezione "Calcolo di Previsione" del pannello del plug-in;
 			\item\textbf{Postcondizioni}: l’utente avrà selezionato una politica temporale applicabile ad un successivo calcolo di previsione;
-			\item\textbf{Scenario Principale}: l’utente inserisce il tempo di previsione sul flusso dati attraverso l'inserimento dei campi "Secondi", "Minuti", "Ore" nell’apposito spazio di editing.
+			\item\textbf{Scenario principale}: l’utente inserisce il tempo di previsione sul flusso dati attraverso l'inserimento dei campi "Secondi", "Minuti", "Ore" nell’apposito spazio di editing.
 		\end{itemize}	
 
 	\label{par:UC6.2}
@@ -443,7 +443,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item il bottone “Avvio Monitoraggio” viene rimpiazzato da “Interruzione Monitoraggio”;
 					\item fino all’interruzione del monitoraggio l’utente non ha la possibilità di modificare i vari collegamenti.
 				\end{enumerate}
-			\item\textbf{Scenario Principale}: l’utente avvia il calcolo di previsione selezionando il pulsante “Avvia Monitoraggio”; 
+			\item\textbf{Scenario principale}: l’utente avvia il calcolo di previsione selezionando il pulsante “Avvia Monitoraggio”; 
 			\item\textbf{Estensioni}: 
 				\begin{enumerate} 
 					\item \hyperref[par:UC14]{UC14}: visualizzazione messaggio d’errore "Politica Temporale Non Definita";
@@ -466,7 +466,7 @@ Essendo l’attore primario un ruolo specifico assunto da un utente che interagi
 					\item l’utente ha avviato il monitoraggio (\hyperref[par:UC6.2]{UC6.2}) e dispone delle previsioni sul flusso di dati in quanto il calcolo di previsione è stato completato correttamente  (\hyperref[par:UC21]{UC21}).
 				\end{enumerate}
 			\item\textbf{Postcondizioni}: La previsione calcolata sui dati ricevuti è stata immagazzinata nel DB se lo desidera;
-			\item\textbf{Scenario Principale}: L’utente clicca il pulsante “Invia previsioni” tramite il quale i dati di previsione vengono inviati al DB, altrimenti decide di non salvarli e prosegue con il monitoraggio;
+			\item\textbf{Scenario principale}: L’utente clicca il pulsante “Invia previsioni” tramite il quale i dati di previsione vengono inviati al DB, altrimenti decide di non salvarli e prosegue con il monitoraggio;
 			\item\textbf{Inclusioni} \hyperref[par:UC23]{UC23} : viene visualizzato un messaggio di notifica di "Invio Previsione Avvenuto con Sucesso".
 		\end{itemize}	
 
