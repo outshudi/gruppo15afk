@@ -1,26 +1,18 @@
 \section{Introduzione}
 	\subsection{Scopo del documento}
-		Il presente documento ha lo scopo di descrivere in modo dettagliato i requisiti stabiliti per il prodotto. Tali requisiti sono stati individuati a seguito dell'analisi del capitolato\glo C4, ed i successivi incontri con la proponente\glo \emph{Zucchetti S.p.A.}
+		Il presente documento ha lo scopo di descrivere in modo dettagliato i requisiti stabiliti per il prodotto. Tali requisiti sono stati individuati a seguito dell'analisi del capitolato\glo C4, ed i successivi incontri con la proponente\glo \emph{Zucchetti SPA.}
 
 	
 \subsection{Scopo del prodotto}
-   Lo scopo del progetto è la realizzazione di un plug-in\glo per \emph{Grafana}\glo per la previsione sul flusso dati\glo. Tale plug-in con la capacità di utilizzare una Support Vector Machine\glo o Regressione Lineare\glo addestrate dall'utente la cui definizione è contenuta in un file in formato JSON\glo. Il sistema per aiutare l’utente nel monitoraggio, sarà in grado di lanciare allarmi.
+   Lo scopo del progetto è la realizzazione di un plug-in\glo per Grafana\glo per la previsione sul flusso dati\glo. Tale plug-in con la capacità di utilizzare una Support Vector Machine\glo o Regressione Lineare\glo addestrate dall'utente la cui definizione è contenuta in un file in formato JSON\glo. Il sistema per aiutare l’utente nel monitoraggio, sarà in grado di lanciare allarmi.
 Nello specifico il plug-in deve poter monitorare i dati in ingresso da un certo flusso, come per esempio percentuali di utilizzo della memoria o temperatura del processore, i quali verranno successivamente mostrati attraverso l'interfaccia grafica\glo di Grafana.
 La necessità di lanciare un allarme verrà valutata dalla SVM\glo o RL\glo in base ai predittori su cui è stata tarata dopo la fase di addestramento.
-Il plug-in rimane in esecuzione su Grafana e riceve continuamente informazioni in ingresso da un flusso di dati: viene quindi continuamente ricalcolata la necessità di lanciare un \emph{alert}\glo.
+Il plug-in rimane in esecuzione su Grafana e riceve continuamente informazioni in ingresso da un flusso di dati: viene quindi continuamente ricalcolata la necessità di lanciare un alert\glo.
 La SVM, sopra menzionata, potrà essere sviluppata attraverso la libreria\glo SVMJS\glo (\url{ https://github.com/karpathy/svmjs}), mentre la RL utilizzerà una libreria fornita dal proponente\glo e sarà disponibile un’ulteriore guida al link \url{https://github.com/Tom-Alexander/regression-js}.
 
 	
 	\subsection{Glossario}
 		Affinché sia possibile evitare ambiguità relative al linguaggio utilizzato nei documenti formali, viene fornito il \emph{Glossario v.1.0.0}. In tale documento vengono definiti e descritti tutti i termini con un significato particolare. Per facilitare la lettura, i termini sono contraddistinti mediante una lettera \emph{"G"} a pedice.
-		
-	\subsection{Riferimenti}
-		\subsubsection{Normativi}
-			\begin{itemize}
-				\item \textbf{Norme di progetto}: \emph{Norme\_di\_Progetto\_v0.0.1};
-				\item \textbf{Capitolato d'appalto C4 - Predire in Grafana: plug-in per per piattaforma Grafana}: \url{https://www.math.unipd.it/~tullio/IS-1/2019/Progetto/C4.pdf};
-				\item \textbf{Verbale esterno}: DATE!. 
-			\end{itemize}
 		
 \subsection{Riferimenti}
 		\subsubsection{Normativi}
