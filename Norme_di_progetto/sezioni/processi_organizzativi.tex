@@ -33,7 +33,7 @@ Il \textit{Progettista} gestisce gli aspetti tecnologici e tecnici del progetto.
 Il \textit{Progettista} deve:
 \begin{itemize}
 	\item effettuare scelte efficienti ed ottimizzate su aspetti tecnici del progetto;
-	\item sviluppare un'architettura che sfrutti tecnologie note ed ottimizzate, su cui basare un prodotto stabile e mantenibile.
+	\item sviluppare un'architettura che sfrutti tecnologie note ed ottimizzate, su cui basare un prodotto stabile e manutenibile.
 \end{itemize}
 
 \paragraph{Programmatore}\mbox{} \\ \mbox{} \\
@@ -41,7 +41,7 @@ Il \textit{Programmatore} è responsabile della codifica del progetto e delle co
 Il \textit{Programmatore} si occupa di:
 \begin{itemize}
 	\item implementare le decisioni del progettista;
-	\item creare o gestire componenti di supporto per la verifica e validazione del codice
+	\item creare o gestire componenti di supporto per la verifica e validazione del codice.
 \end{itemize}
 
 \paragraph{Verificatore}\mbox{} \\ \mbox{} \\
@@ -54,7 +54,7 @@ Il \textit{Verificatore} deve:
 \end{itemize}
 
 \subsubsection{Gestione dei rischi}
-È compito del \textit{Responsabile} di rilevare i rischi e di renderli noti, tramite un continuo monitoraggio e una continua identificazione di quest'ultimi. \\
+È compito del \textit{Responsabile} rilevare i rischi e renderli noti, tramite un continuo monitoraggio e una continua identificazione di quest'ultimi. \\
 Qualora dovesse essere \textbf{identificato} un nuovo rischio è necessario procedere con i seguenti passaggi:
 \begin{enumerate}
 	\item \textbf{Classificare} il rischio seguendo la codifica;
@@ -64,27 +64,27 @@ Qualora dovesse essere \textbf{identificato} un nuovo rischio è necessario proc
 
 \paragraph{Codifica}\mbox{} \\ \mbox{} \\
 La codifica dei rischi è utilizzata per la classificazione. Il codice di un rischio si presenta nella forma: \\
-\centerline{\textbf{Ri[categoria][grado][numero]}}
+\centerline{\textbf{Ri[Categoria][Grado][Numero]}}
 dove:
 \begin{itemize}
-	\item \textbf{categoria}: indica la categoria del rischio, essa può assumere i valori:
+	\item \textbf{Categoria}: indica la categoria del rischio, essa può assumere i valori:
 	\begin{itemize}
 		\item \textbf{O} per i rischi organizzativi;
 		\item \textbf{T} per i rischi tecnologici;
 		\item \textbf{P} per i rischi interpersonali.
 	\end{itemize}
-	\item \textbf{grado}: indica il grado di rischio, è la somma tra la probabilità e la gravità. Queste ultime possono assumere i seguenti valori:
+	\item \textbf{Grado}: indica il grado di rischio, è la somma tra la probabilità e la gravità. Queste ultime possono assumere i seguenti valori:
 	\begin{itemize}
 		\item \textbf{0}: bassa;
 		\item \textbf{1}: media;
 		\item \textbf{2}: alta.
 	\end{itemize}
 	(In questo caso un rischio con una probabilità bassa ma una gravità alta avrà lo stesso grado di un rischio con una probabilità alta e una gravità bassa, ovvero 2)
-	\item \textbf{numero}: insieme a categoria e grado identifica in maniera univoca il rischio, può assumere un valore intero progressivo ad una cifra (0-9).
+	\item \textbf{Numero}: insieme a categoria e grado identifica in maniera univoca il rischio, può assumere un valore intero progressivo ad una cifra (0-9).
 \end{itemize}
 
 \subsection{Processi di Coordinamento}
-Di seguito vengono descritte le norme che regolano le comunicazioni e gli incontri del gruppo, che siano tra i membri o con committenti e proponenti
+Di seguito vengono descritte le norme che regolano le comunicazioni e gli incontri del gruppo, che siano tra i membri o con committenti e proponenti.
 \subsubsection{Gestione Comunicazioni}
 \paragraph{Comunicazioni Interne}\mbox{} \\ \mbox{} \\
 Le comunicazioni interne ai membri del gruppo vengono gestite  tramite 2 applicazioni:
@@ -92,22 +92,22 @@ Le comunicazioni interne ai membri del gruppo vengono gestite  tramite 2 applica
 	\item Telegram\glo;
 	\item Discord\glo.
 \end{itemize}
-È stato disposto un gruppo Telegram, sul quale si discute di tematiche generali o collettive, garantendo risposte rapide e ordinate in caso di decisioni per votazione, grazie ad apposite funzioni dette bot di Telegram\glo. \\
-Discord viene usato principalmente per le riunioni tra i membri del gruppo, ma l'applicazione mette anche a disposizione dei canali testuali. Tali canali sono stati suddivisi per tema e vengono usati per le comunicazioni specifiche per agevolare la stesura dei documenti. Tali canali sono:
+È stato disposto un gruppo Telegram sul quale si discute di tematiche generali o collettive, garantendo risposte rapide e ordinate in caso di decisioni per votazione, grazie ad apposite funzioni dette bot di Telegram\glo. \\
+Discord viene usato principalmente per le riunioni tra i membri del gruppo, ma l'applicazione mette anche a disposizione dei canali testuali. Tali canali sono stati suddivisi per tema e vengono usati per le comunicazioni specifiche per agevolare la stesura dei documenti. Vengono suddivisi in:
 \begin{itemize}
-	\item \textbf{general}: Per discussioni riguardanti rotazioni dei ruoli e decisione degli argomenti da discutere nelle riunioni;
-	\item \textbf{links}: Per tenere traccia di tutti i link utili al progetto;
-	\item \textbf{analisi-requisiti}: Per discutere gli Use Case\glo e i requisiti necessari alla stesura dell'\textit{Analisi dei Requisiti};
-	\item \textbf{norme}: Per discutere riguardo le regole del \textit{Way of Working} del gruppo, le norme da seguire e, di conseguenza, la stesura del documento \textit{Norme di Progetto}\glo;
-	\item \textbf{piano-progetto}: Per confrontarsi riguardo il monte ore dei vari ruoli e per facilitare la stesura del documento \textit{Piano di Progetto};
-	\item \textbf{piano-qualifica}: Per discutere strategie da attuare per garantire qualità attraverso verifica\glo e validazione\glo.
+	\item \textbf{General}: per discussioni riguardanti rotazioni dei ruoli e decisione degli argomenti da discutere nelle riunioni;
+	\item \textbf{Links}: per tenere traccia di tutti i link utili al progetto;
+	\item \textbf{Analisi-requisiti}: per discutere gli Use Case\glo e i requisiti necessari alla stesura dell'\textit{Analisi dei Requisiti};
+	\item \textbf{Norme}: per discutere riguardo le regole del \textit{Way of Working} del gruppo, le norme da seguire e, di conseguenza, la stesura del documento \textit{Norme di Progetto}\glo;
+	\item \textbf{Piano-progetto}: per confrontarsi riguardo il monte ore dei vari ruoli e per facilitare la stesura del documento \textit{Piano di Progetto};
+	\item \textbf{Piano-qualifica}: per discutere di strategie da attuare per garantire qualità attraverso verifica\glo e validazione\glo.
 \end{itemize}
 \paragraph{Comunicazioni Esterne}\mbox{} \\ \mbox{} \\
 Le comunicazioni con soggetti esterni al gruppo sono di competenza del responsabile. Gli strumenti predefiniti sono la posta elettronica, dove viene utilizzato l'indirizzo \href{mailto:gruppoafk15@gmail.com}{gruppoafk15@gmail.com}.
-Per comunicare con \textit{Zucchetti} viene usato il servizio Skype\glo per le chiamate. Il responsabile ha il compito di tenere informati gli altri componenti del gruppo in caso di assenza.
+Per comunicare con \textit{Zucchetti SPA} viene usato il servizio Skype\glo per le chiamate. Il responsabile ha il compito di tenere informati gli altri componenti del gruppo in caso di assenza.
 
 \subsubsection{Gestione Riunioni}
-Le riunioni possono essere interne o esterne. All'inizio di ogni riunione il \textit{Responsabile} nomina, tra i componenti del gruppo, un \textit{Segretario} che si occuperà di far rispettare l'ordine del giorno. Inoltre ha l'onere della stesura del \textit{Verbale di Riunione}\glo
+Le riunioni possono essere interne o esterne. All'inizio di ogni riunione il \textit{Responsabile} nomina, tra i componenti del gruppo, un \textit{Segretario} che si occuperà di far rispettare l'ordine del giorno. Inoltre ha l'onere della stesura del \textit{Verbale di Riunione}\glo.
 
 \paragraph{Riunioni interne} \mbox{} \\ \mbox{} \\
 E' compito del \textit{Responsabile} organizzare riunioni interne al gruppo. Ciò prevede, più nello specifico, la stesura dell'ordine del giorno e
@@ -128,7 +128,7 @@ dello stesso Responsabile giudicare come valida o meno la richiesta presentatagl
 agire di conseguenza.
 
 \paragraph{Verbale di riunione} \mbox{} \\ \mbox{} \\
-Ad ogni riunione, interna o esterna, è compito del \textit{Segretario} designato redigere il \textit{Verbale di riunione} corrispondente, che deve essere poi approvato dal \textit{Responsabile}. La struttura del \textit{Verbale} è definita in \hyperref[par:verbali]{§ 3.5.5}
+Ad ogni riunione, interna o esterna, è compito del \textit{Segretario} designato redigere il \textit{Verbale di riunione} corrispondente, che deve essere poi approvato dal \textit{Responsabile}. La struttura del \textit{Verbale} è definita in \hyperref[par:verbali]{§ 3.5.5}.
 
 
 \subsection{Strumenti}
