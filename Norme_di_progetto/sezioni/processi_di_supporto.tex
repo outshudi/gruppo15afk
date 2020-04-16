@@ -117,7 +117,7 @@ Alcuni esempi di file \textbf{non corretti} sono: \begin{itemize}
 \item ogni termine inserito nel \textit{Glossario} è marcato con una \textbf{G} maiuscola a pedice, solamente nella sua prima occorrenza;
 \item non vengono segnate con la \textbf{G} a pedice le parole da \textit{Glossario} presenti nei titoli e nelle didascalie di immagini e tabelle;
 \item se nel \textit{Glossario} un termine presenta una descrizione che utilizza termini da glossario, è necessario trattare questi termini come tali, segnando la \textbf{G} a pedice e aggiungendoli al documento con la relativa descrizione;
-\item se nel \textit{Glossario} è presente un termine sinonimo (o tradotto il lingua inglese) di un altro già presente, bisognerà collegarlo alla relativa definizione attraveso il comando \verb|\hyperref[par:"nome_paragrafo"]| e la relativa label \verb|\label{par:nome_paragrafo}|, posta sopra la prima occorrenza di definizione.
+\item se nel \textit{Glossario} è presente un termine sinonimo (o tradotto il lingua inglese) di un altro già presente, bisognerà collegarlo alla relativa definizione attraverso il comando \verb|\hyperref[par:"nome_paragrafo"]| e la relativa label \verb|\label{par:nome_paragrafo}|, posta sopra la prima occorrenza di definizione.
 \end{itemize}
 
 \subsubsection{Stile del testo}
@@ -249,7 +249,7 @@ Ogni versione di qualsiasi documento deve corrispondere ad una riga della tabell
 
 \paragraph{GitHub} \mbox{} \\ \mbox{} \\
 Per le parti del progetto da versionare si è scelto di usare GitHub\glo, un servizio del sistema di versionamento distribuito Git per contenere la repository remota. \\
-I membri del team possono interagire con il VCS\glo sia da linea di comando, sia attarverso software che ne migliorano l'usabilità, come GitKraken e GitHub Desktop. La versione ufficiale del progetto è ospitata in una repository remota su GitHub, all'indirizzo \\
+I membri del team possono interagire con il VCS\glo sia da linea di comando, sia attraverso software che ne migliorano l'usabilità, come GitKraken e GitHub Desktop. La versione ufficiale del progetto è ospitata in una repository remota su GitHub, all'indirizzo \\
 \centerline{\url{https://github.com/teamafkSWE}}
 
 \paragraph{Struttura del repository} \mbox{} \\ \mbox{} \\
@@ -346,7 +346,7 @@ dove: \begin{itemize}
 \item \textbf{DCE}: data conclusione effettiva;
 \item \textbf{DCP}: data conclusione pianificata.
 \end{itemize}
-Se $SV \leq 0$ significa che l’attività o il processo è in pari o in anticipo, invece, se $SV > 0$ significa che l’attività è in ritardo. \\	
+Se $SV \leq 0$ significa che l'attività o il processo è in pari o in anticipo, invece, se $SV > 0$ significa che l'attività è in ritardo. \\	
 		Budget Variance (BV) & MP02 & Permette di controllare i costi sostenuti alla data corrente rispetto al budget preventivato. Viene calcolata in fase di consuntivo di periodo utilizzando la seguente formula: \newline
 		\[ BV[\%] = \frac{CP-CE}{CE}\cdot 100 \]		
 dove: \begin{itemize}
@@ -354,7 +354,7 @@ dove: \begin{itemize}
 \item \textbf{CE}: costo effettivo.
 \end{itemize}
 Se $BV[\%] \geq 0$ indica che il budget sta venendo speso più lentamente di quanto pianificato, se negativo invece indica che il budget sta venendo speso più velocemente di quanto pianificato. \\
-Produttività (P) & MP03 & Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. E’ misurata in termini di numero di linee di codice (\hyperref[par:MS01]{LOC}) sviluppate da una persona nell’unità di tempo stabilita (settimana). E’utilizzata per valutare lo sforzo richiesto per lo sviluppo  del progetto a fronte delle sue dimensioni. 
+Produttività (P) & MP03 & Rappresenta la produttività media delle risorse impiegate, cioè delle persone coinvolte, nelle diverse fasi del progetto. E’ misurata in termini di numero di linee di codice (\hyperref[par:MS01]{LOC}) sviluppate da una persona nell’unità di tempo stabilita (settimana). E’ utilizzata per valutare lo sforzo richiesto per lo sviluppo  del progetto a fronte delle sue dimensioni. 
 \[ Pmedia = \frac{LOC}{settimana}\]
 	\end{tabular}
 	\end{center}
@@ -387,7 +387,7 @@ Questa sezione ha lo scopo di fornire delle metriche per garantire un buon livel
 		Numero dei Metodi (NM)  & MS02 & Numero medio di metodi contenuti nelle classi di un oggetto. Un numero troppo alto di metodi può indicare la necessità di scomporre la classe. Un numero troppo basso deve far riflettere sull'effettiva utilità della classe in esame. 
 		\[ NM =\frac{\sum\#metodi}{\#classi}  \] \\
 		Numero di Parametri (NP) & MS03 & Numero di parametri passati ad un metodo. Un eccessivo numero di parametri passati ad un metodo può
-indicare un’eccessiva complessità dello stesso. \\
+indicare un'eccessiva complessità dello stesso. \\
 		Commenti per Linee di \newline Codice (CLC) & MS04 & Rapporto fra numero di righe di commento e numero totale di righe (vuote escluse). Un codice ben commentato può essere compreso più facilmente e velocemente, facilitando le operazioni di manutenzione. 
 		\[ CLC = \frac{\#righe\_commento}{\#tot\_righe}\] \\
 		Code Coverage (CC) & MS05 & Percentuale delle linee di codice coperte dai test. Avere codice coperto da test riduce la possibilità di introdurre errori nel prodotto. 
@@ -461,7 +461,7 @@ Test condotti per valutare la conformità di un componente o sistema con requisi
 \end{itemize}
 
 \paragraph*{Test di regressione} \mbox{} \\ \mbox{} \\
-Il test di regressione va eseguito ogni volta che viene modificata un’implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti.\\ Se necessario è anche possibile scrivere nuovi test.
+Il test di regressione va eseguito ogni volta che viene modificata un'implementazione in un programma. È possibile eseguire nuovamente i test esistenti sul codice modificato, integrando solo le parti che abbiano precedentemente superato il test di unità, per stabilire se le modifiche apportate hanno alterato elementi precedentemente funzionanti.\\ Se necessario è anche possibile scrivere nuovi test.
 
 \paragraph*{Test di sistema} \mbox{} \\ \mbox{} \\
 Verificano il comportamento dell'intero sistema.\\
